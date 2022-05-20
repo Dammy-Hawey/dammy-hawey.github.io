@@ -1,0 +1,238 @@
+.tob{
+    margin-top: -1px;
+    margin-left: 15px;
+    width:none;
+    height: 20px;
+}
+/*.header{
+    color:grey;
+    background-color:#red;
+    margin-right:50px;
+    padding:4px;
+    text-align: center;
+    font-style:italic;
+}
+.card {
+    color:#ff00a2;
+    text-align:center;
+    background-color:#ccfff;
+    padding:10px;
+    border-radius:15px;
+    border-bottom:10px solid #ccc;
+    margin-left:70px;
+    margin-right:200px;
+    max-width:600px;
+    /*float:center;
+}
+
+.item{
+    background:white;
+    float:left;
+    border-top:5px soft #aaa;
+    border-bottom:3px solid #fff;
+}*/
+.address{
+color:#303030;
+background:#fff;
+padding:15px;
+border-radius:30px;
+border-bottom:5px solid #ccc;
+font-style:bold;
+float:right;
+}
+.dam-container-3{
+    padding: 0.01em 10px;
+}
+.dam-container-2{
+    padding: 0.01em 14px;
+}
+.dam-container{
+    padding:0.01em 16px;
+}
+.dam-container-1{
+    padding:0.01em 16px;
+    margin-top: -80px;
+}
+menu,nav,section,summary{display:block}
+
+.dam-top{position:fixed;width:100%;z-index:1}.dam-top{top:0}
+@media screen and (max-width:600px){.dam-topnav a{display:block}.dam-navbar li:not(.dam-opennav)
+{float:none;width:100%!important}.dam-navbar li.dam-right{float:none!important}}	
+@media screen and (max-width:600px){.dam-topnav .dam-dropdown-hover .dam-dropdown-content,.dam-navbar .dam-dropdown-click .dam-dropdown-content,.dam-navbar .dam-dropdown-hover .dam-dropdown-content{
+    position:relative}}	
+@media screen and (max-width:600px){.dam-topnav,.dam-navbar{text-align:center}}
+@media (max-width:600px){.dam-hide-small{display:none!important}}
+@media (max-width:992px) and (min-width:601px){.dam-hide-medium{display:none!important}}
+@media (min-width:993px){.dam-hide-large{display:none!important}}
+.dam-center{text-align:center!important}
+.dam-left-align{text-align:left!important}
+.dam-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.dam-navbar li{float:left}.dam-navbar li a,.dam-navitem,.dam-navbar li .dam-btn,.dam-navbar li .dam-input{
+    display:block;padding:8px 16px}.dam-navbar li .dam-btn,.dam-navbar li .dam-input{border:none;outline:none;width:100%}
+.dam-navbar li a:hover{color:#000;background-color:#ccc}
+.dam-navbar .dam-dropdown-hover,.dam-navbar .dam-dropdown-click{position:static}
+.dam-navbar .dam-dropdown-hover:hover,.dam-navbar .dam-dropdown-hover:first-child,.dam-navbar .dam-dropdown-click:hover{
+    background-color:#ccc;color:#000}
+.dam-navbar a,.dam-topnav a,.dam-sidenav a,.dam-dropdown-content a,.dam-accordion-content a,.dam-dropnav a{
+    text-decoration:none!important}
+.dam-navbar .dam-opennav.dam-right{float:right!important}.dam-topnav{padding:8px 8px}
+.dam-theme-d2 {color:#fff !important; background-color:#4d636f !important}
+.dam-theme-d3 {color:#fff !important; background-color:#737374 !important}
+.dam-theme-d4 {color:#fff !important; background-color:#3a4b53 !important}
+.dam-theme-d5 {color:#fff !important; background-color:#14252e !important}
+.dam-image{max-width:100%;height:auto}
+.dam-wide{
+    font-family:"Segoe UI",Arial,sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media (max-width:600px){.dam-hide-small{display:none!important}}
+.dam-border{border:1px solid #ccc!important}
+.dam-padding-tiny{padding:2px 4px!important}.dam-padding-small{padding:4px 8px!important}
+.dam-padding-medium,.dam-padding,.dam-form{padding:8px 16px!important}
+.dam-padding-large{padding:12px 24px!important}.dam-padding-xlarge{padding:16px 32px!important}
+.dam-padding-xxlarge{padding:24px 48px!important}.dam-padding-jumbo{padding:32px 64px!important}
+.dam-padding-4{padding-top:4px!important;padding-bottom:4px!important}
+.dam-padding-8{padding-top:8px!important;padding-bottom:8px!important}
+.dam-padding-12{padding-top:12px!important;padding-bottom:12px!important}
+.dam-padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.dam-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.dam-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.dam-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.dam-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.dam-padding-128{padding-top:128px!important;padding-bottom:128px!important}
+.dam-padding-0{padding:0!important}
+.dam-padding-top{padding-top:8px!important}.dam-padding-bottom{padding-bottom:8px!important}
+.dam-padding-left{padding-left:16px!important}.dam-padding-right{padding-right:16px!important}
+.dam-topbar{border-top:6px solid #ccc!important}.dam-bottombar{border-bottom:6px solid #ccc!important}
+.dam-leftbar{border-left:6px solid #ccc!important}.dam-rightbar{border-right:6px solid #ccc!important}
+.dam-row-padding,.dam-row-padding>.dam-half,.dam-row-padding>.dam-third,.dam-row-padding>.dam-twothird,.dam-row-padding>.dam-threequarter,.dam-row-padding>.dam-quarter,.dam-row-padding>.dam-col{padding:0 8px}
+.dam-padding-16{padding-top:16px!important;padding-bottom:16px!important}
+.dam-padding-large{padding:12px 24px!important}.dam-padding-xlarge{padding:16px 32px!important}
+.dam-margin-left{margin-left:16px!important}.dam-margin-right{margin-right:16px!important}
+.dam-margin{margin:16px!important}.dam-margin-0{margin:0!important}
+.dam-margin-top{margin-top:65px!important}.dam-margin-bottom{margin-bottom:16px!important}
+.dam-card-2,.dam-example{box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.dam-card-4,.dam-hover-shadow:hover{box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.dam-card-8{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important}
+.dam-card-12{box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important}
+.dam-card-16{box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)!important}
+.dam-card-24{box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)!important}
+.dam-content{max-width:980px;margin:auto}
+.dam-display-container:hover .dam-display-hover{display:block}.dam-display-container:hover span.dam-display-hover{
+    display:inline-block}.dam-display-hover{display:none}
+.dam-circle{border-radius:50%!important}
+.dam-tooltip,.dam-display-container{position:relative}.dam-tooltip .dam-text{display:none}.dam-tooltip:hover .dam-text{
+    display:inline-block}
+    .dam-left{float:left!important}.dam-right{float:right!important}
+    .dam-tiny{font-size:10px!important}.dam-small{font-size:12px!important}
+    .dam-medium{font-size:15px!important}.dam-large{font-size:18px!important}
+.dam-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.dam-xlarge{font-size:24px!important}.dam-xxlarge{color: rgb(15, 177, 23);text-shadow:5px 2px 4px rgb(48, 45, 45);
+    font-size:36px;font-weight:bold!important}
+.dam-animate-fading{-webkit-animation:fading 10s infinite;animation:fading 10s infinite}
+    @-webkit-keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+    @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.dam-badge,.dam-tag,.dam-sign{
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center
+}
+.dam-badge{border-radius:50%}
+.dam-responsive{overflow-x:auto}
+.dam-container:after,.dam-panel:after,.dam-row:after,.dam-row-padding:after,.dam-topnav:after,.dam-clear:after,
+.dam-btn-group:before,.dam-btn-group:after,.dam-btn-bar:before,.dam-btn-bar:after
+{content:"";display:table;clear:both}
+
+.dam-col,.dam-half,.dam-third,.dam-twothird,.dam-threequarter,.dam-quarter{float:left;width:100%}
+.dam-col.s1{width:8.33333%}
+.dam-col.s2{width:16.66666%}
+.dam-col.s3{width:24.99999%}
+.dam-col.s4{width:33.33333%}
+.dam-col.s5{width:41.66666%}
+.dam-col.s6{width:49.99999%}
+.dam-col.s7{width:58.33333%}
+.dam-col.s8{width:66.66666%}
+.dam-col.s9{width:74.99999%}
+.dam-col.s10{width:83.33333%}
+.dam-col.s11{width:91.66666%}
+.dam-col.s12,.dam-half,.dam-third,.dam-twothird,.dam-threequarter,.dam-quarter{width:99.99999%}
+@media only screen and (min-width:601px){
+.dam-col.m1{width:8.33333%}
+.dam-col.m2{width:16.66666%}
+.dam-col.m3,.dam-quarter{width:24.99999%}
+.dam-col.m4,.dam-third{width:33.33333%}
+.dam-col.m5{width:41.66666%}
+.dam-col.m6,.dam-half{width:49.99999%}
+.dam-col.m7{width:58.33333%}
+.dam-col.m8,.dam-twothird{width:66.66666%}
+.dam-col.m9,.dam-threequarter{width:74.99999%}
+.dam-col.m10{width:83.33333%}
+.dam-col.m11{width:91.66666%}
+.dam-col.m12{width:99.99999%}}
+@media only screen and (min-width:993px){
+.dam-col.l1{width:8.33333%}
+.dam-col.l2{width:16.66666%}
+.dam-col.l3,.dam-quarter{width:24.99999%}
+.dam-col.l4,.dam-third{width:33.33333%}
+.dam-col.l5{width:41.66666%}
+.dam-col.l6,.dam-half{width:49.99999%}
+.dam-col.l7{width:58.33333%}
+.dam-col.l8,.dam-twothird{width:66.66666%}
+.dam-col.l9,.dam-threequarter{width:74.99999%}
+.dam-col.l10{width:83.33333%}
+.dam-col.l11{width:91.66666%}
+.dam-col.l12{width:99.99999%}}
+.dam-content{max-width:980px;margin:auto}
+.dam-rest{overflow:hidden}
+
+
+.dam-top{position:fixed;width:100%;z-index:1}.dam-top{top:0}
+@media screen and (max-width:600px){.dam-topnav a{display:block}.dam-navbar li:not(.dam-opennav)
+{float:none;width:100%!important}.dam-navbar li.dam-right{float:none!important}}	
+@media screen and (max-width:600px){.dam-topnav .dam-dropdown-hover .dam-dropdown-content,.dam-navbar .dam-dropdown-click .dam-dropdown-content,.dam-navbar .dam-dropdown-hover .dam-dropdown-content{
+    position:relative}}	
+@media screen and (max-width:600px){.dam-topnav,.dam-navbar{text-align:center}}
+@media (max-width:600px){.dam-hide-small{display:none!important}}
+@media (max-width:992px) and (min-width:601px){.dam-hide-medium{display:none!important}}
+@media (min-width:993px){.dam-hide-large{display:none!important}}
+.dam-center{text-align:center!important}
+.dam-left-align{text-align:left!important}
+.dam-navbar{list-style-type:none;margin:0;padding:0;overflow:hidden}
+.dam-navbar li{float:left}.dam-navbar li a,.dam-navitem,.dam-navbar li .dam-btn,.dam-navbar li .dam-input{
+    display:block;padding:8px 16px}.dam-navbar li .dam-btn,.dam-navbar li .dam-input{border:none;outline:none;width:100%}
+.dam-navbar li a:hover{color:#000;background-color:#ccc}
+.dam-navbar .dam-dropdown-hover,.dam-navbar .dam-dropdown-click{position:static}
+.dam-navbar .dam-dropdown-hover:hover,.dam-navbar .dam-dropdown-hover:first-child,.dam-navbar .dam-dropdown-click:hover{
+    background-color:#ccc;color:#000}
+.dam-navbar a,.dam-topnav a,.dam-sidenav a,.dam-dropdown-content a,.dam-accordion-content a,.dam-dropnav a{
+    text-decoration:none!important}
+.dam-navbar .dam-opennav.dam-right{float:right!important}.dam-topnav{padding:8px 8px}
+.dam-wide{
+    font-family:"Segoe UI",Arial,sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+@media (max-width:600px){.dam-hide-small{display:none!important}}
+.dam-padding-8{padding-top:8px!important;padding-bottom:8px!important}
+.dam-margin-left{margin-left:16px!important}.dam-margin-right{margin-right:16px!important}
+.dam-margin{margin:16px!important}.dam-margin-0{margin:0!important}
+.dam-margin-top{margin-top:65px!important}.dam-margin-bottom{margin-bottom:16px!important}
+.dam-card-2,.dam-example{box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.747),0 2px 10px 0 rgba(0, 0, 0, 0.603)!important}
+.dam-left{float:left!important}.dam-right{float:right!important}
+.dam-cardit-2{box-shadow:0 2px 4px 0 rgba(235, 232, 232, 0.747),0 2px 10px 0 rgba(199, 181, 181, 0.603)!important}
+.dam-spin{animation:dam-spin 2s infinite linear;-webkit-animation:dam-spin 2s infinite linear}
+@-webkit-keyframes dam-spin{0%{
+    -webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{
+        -webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+@keyframes dam-spin{0%{
+    -webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{
+        -webkit-transform:rotate(359deg);transform:rotate(359deg)}}
+.dam-white,.dam-hover-white:hover{color:#000!important;background-color:mintcream!important}
+.dam-text-grey,.dam-hover-text-grey:hover,.dam-text-gray,.dam-hover-text-gray:hover{font-size: 15px;font-weight: bold;
+    color:#000!important}

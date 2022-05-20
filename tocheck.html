@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="w3.css">
+    <style>
+      th,td,table{
+        border: 1px solid black;
+        /* border-spacing: 2px; */
+        border-collapse: collapse;
+      }
+      /* th,td{
+        vertical-align: bottom;
+      } */
+    </style>
+</head>
+<body>
+    <ul class="w3-navbar w3-large w3-black w3-left-align">
+        <li class="w3-hide-medium w3-hide-large w3-black w3-opennav w3-right">
+          <a href="javascript:void(0);" onclick="myFunction()">☰</a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li class="w3-hide-small"><a href="#">Link 1</a></li>
+        <li class="w3-hide-small"><a href="#">Link 2</a></li>
+        <li class="w3-hide-small"><a href="#">Link 3</a></li>
+      </ul>
+      
+      <div id="demo" class="w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large w3-black">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+      
+      <div class="w3-container">
+        <p>In the example below, the navigation bar 
+            is replaced with a button (☰) in the top 
+            right corner when shown on tablets and mobile devices. 
+            When the button is clicked, the navigation bar 
+            will be displayed stacked.</p>
+        <p>Resize the screen to see the effect.</p>
+      </div>
+      
+      <script>
+      function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+              x.className += " w3-show";
+          } else { 
+              x.className = x.className.replace(" w3-show", "");
+          }
+      }
+      </script>
+      <table align="center">
+        <caption>ROWSPAN EXAMPLE</caption>
+        <tr>
+          <th>NAMES</th>
+          <td>Abisola Adetutu</td>
+        <tr>
+          <th rowspan="2">MOVIES</th>
+          <td>sasssaaaasaa</td>
+        </tr>
+        <tr>
+          <td>sussususss</td>
+        </tr>
+      </table>
+
+      <input type="password" name="password" id="pswd">
+      <input type="submit" name="submit" value="submit">
+      <p>when click on below button it reveals the password value</p>
+      <button onclick="reveals()">click</button>
+      <p id="demo"></p>
+
+      <script>
+        function reveals(){
+          var x = document.getElementById("pswd").value;
+          document.getElementById("demo").innerHTML=x;
+        }
+      </script>
+</body>
+</html>

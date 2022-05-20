@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthlogin page</title>
+    <link rel="stylesheet" href="marque.css">
+    <link rel="stylesheet" href="preserve.css">
+    <style>
+        @media (max-width:600px){
+        .mainbox{
+            width:80%;
+        }
+        /*img{
+            width: 60%;
+        }*/
+        } 
+        /* table{
+            border-collapse: collapse;
+        }
+    td{
+        /* border: 1px solid green; 
+        /* border-collapse:collapse; 
+        width: 30px; 
+    }*/
+    .mainbox{
+        width: 40%;
+        border: 2px solid rosybrown;
+        border-radius: 6px;
+        padding: 8px;
+        }
+        img{
+            width: 100%;
+        }
+        form{
+            background-color: beige;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>This Page is called "Healthymetre"!</h1>
+    <div class="mainbox">
+        <div>
+            <img src="health/images/fruits.jpg" alt="healthymetre">
+        </div>
+        <div class="2mainbox">
+            <form action="#healthymetre.php" method="POST">
+                
+                <h3>please enter your login details correctly..</h3>
+                <!-- <table>
+                <tr> -->
+                    <label>Username:</label>
+                    <!-- <td> -->
+                        <input type="text" name="username" required>
+                        <br>
+                        <br>
+                    <!-- </td> -->
+                <!-- </tr>
+                <tr> -->
+                    <label>Password:</label>
+                    <!-- <td> -->
+                        <input type="password" name="password" id="pswd" required>
+                        <br>
+                        <br>
+                    <!-- </td>
+                </tr>
+                <tr> -->
+                    <!-- <td> -->
+                        <button onclick="reveals()">see_password</button>
+                    <!-- </td>
+                    <td> -->
+                        <input type="text" id="demo">
+                    <!-- </td>
+                </tr>
+            </table> -->
+            <br>
+            <br>
+                <input type="submit" name="submit" value="SUBMIT">
+                
+            </form>
+        </div>
+    </div>
+    <script>
+        function reveals(){
+            var x = document.grtElementById("pswd").value;
+            document.getElementById("demo").inneHTML = x;
+        }
+    </script>
+    </center>
+    <br>
+    <br>
+    <footer style="height:60px;background-color:rgba(100, 94, 94, 0.562);">
+        <strong class="fame">
+       Courtesy:<br>
+       Haweytech Unlimited<br>
+       Technologies for better World(Nigeria CHAPTER)
+</strong>
+   <b>Powered by 
+<a href="default.html" target="_blank" style="font-size:20px;
+color:ghostwhite;">Haweytech</a>
+</b>
+</footer>
+</body>
+</html>

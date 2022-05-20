@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_up page</title>
+	<link rel="stylesheet" href="preserve.css">
+	<link rel="stylesheet" href="marque.css">
+	<link rel="stylesheet" href="newcss.css">
+
+    <style>
+	@media (max-width:600px){
+		
+		.logimg{
+			width: 100%;
+		}
+	
+	}
+
+        .logimg{
+            width: 50%;
+        }
+        label{
+            font-size:20px;
+            font-weight: bold;
+        }
+		form{
+			background-color: #cc11;
+		}
+        /* input{
+            width: 18%;
+            border: 2px solid black;
+            border-radius: 5px;
+        } */
+    </style>
+</head>
+<body>
+
+	<header class="h3-top bgor">
+        <!-- <div class="bgor"> -->
+        <img id="headlogo" src="images_1/Gmylogoview.png" alt="myLOGO">     
+            <p>Here is <b>HAWEYTECH</b><br>
+                <i>(With an</i> HiTech <i>views!)</i></p>
+                    <pre class="hdtext">
+            Research,Innovation and 
+            Invention for Better 
+            Technological Existence..!!
+                </pre> 
+                <b class="maque">...Building a Technological Environment for the Advancement of All...!</b>
+                <!-- <div class="bgor"> -->
+                <ul class="h3-margin-left margin-exp h3-large">
+                    <li class="h3-hide-medium h3-hide-large h3-opennav dclor">
+                        <a href="javascript:void(0);" onclick="myFunction()">MENU ☰</a>
+                    </li>
+                        <li class="lideco h3-hide-small"><a href="#">ABOUT US</a></li>&nbsp;
+                        <li class="lideco h3-hide-small"><a href="#">CONTACTS</a></li>&nbsp;
+                        <li class="lideco h3-hide-small"><a href="#">OUR PROGRAMS</a></li>&nbsp;
+                        <li class="lideco h3-hide-small"><a href="trash.html">FAQS</a></li>&nbsp;
+                        <li class="lideco h3-hide-small"><a href="#">JOBS</a></li>&nbsp;
+                        <li class="lideco h3-hide-small h3-dropdown-hover h3-dropdown-hova">
+                            <a href="#">BUSINESS</a>
+                            <!-- <div class="h3-dropdown-content h3-white h3-card-4">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                              </div> -->
+                        </li>&nbsp;
+                        <li class="lideco h3-hide-small"><a href="tocheck.html">MORE...!</a></li>
+                    </ul>
+                
+                <hr class="h3-line">
+            <!-- </div> -->
+        </header>
+    
+        <div id="demo" class="h3-hide h3-hide-large h3-hide-medium nav-top-show">
+            <ul class="h3-navbar">
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACTS</a></li>
+            <li><a href="#">OUR PROGRAMS</a></li>
+            <li><a href="#">FAQS</a></li>
+            <li><a href="#">JOBS</a></li>
+            <li><a href="#">BUSINESS</a></li>
+            <li><a href="#">MORE...!</a></li>
+        </ul>
+        </div>
+            <script>
+                function myFunction() {
+                        var x = document.getElementById("demo");
+                        if (x.className.indexOf("h3-show") == -1) {
+                            x.className += " h3-show";
+                        } else { 
+                            x.className = x.className.replace(" h3-show", "");
+                        }
+                }
+            </script>
+
+	<center>
+    <h2 style="margin-top:250px">Create new account here!<br>And let's help you manage your HEALTH status now...</h2>
+    <div>
+        <img class="logimg" src="health/images/carbohydrate 4.jpg" alt="health">
+		<p style="color:red;font-size:20px;">Please enter all your details correctly to avoid mistakes!</p>
+    </div>
+	
+    <div>
+        
+        <form action="halthcheck.php" method="POST">
+            <fieldset style="width: 50%;">
+				<legend style="font-family:algerian;color:green;"><h2>Haweytech_Health Info Form</h2></legend>
+				<!-- <center> -->
+				<label for="">Surname:</label>
+			<input type = 'text' name = 'username' placeholder='username' required><br>
+			<br/><br>
+            <label for="">First name:</label>
+			<input type = 'text' name = 'firstname' placeholder='firstname' required><br>
+			<br/><br>
+            <label for="">Other name:</label>
+			<input type = 'text' name = 'othername' placeholder='othername' required><br>
+			<br/><br>
+            <label for="">Date of birth:</label>
+			<input type="date" name="bday" required><br/>
+			<br/><br>
+			<!-- <label for="">Surname:</label>Select your favorite color:
+			<input type="color" name="favcolor" value="#ff0000"><br/>
+			<br/> -->
+            <label for="">Email address:</label>
+			<input type = 'email' name = 'email' placeholder='enter your email-address' required><br>
+			<br/><br>
+            <label for="">Password:</label>
+			<input type = 'password' name = 'password' placeholder='enter chosen password!' required><br>
+			<br/><br>
+            <label for="">Confirm Password:</label>
+			<input type = 'password' name = 'cpassword' placeholder='confirm_password' required><br>
+			<br/><br>
+            <label for="">Occupation:</label>
+			<input type = 'text' name = 'faculty' placeholder='faculty' required><br>
+			<br/><br>
+            <label for="">Work duration:</label>
+			<input type = 'text' name = 'department' placeholder='2wise/week,4-hours/day' required><br>
+				<br/>
+                <br>
+	
+                <label for="">Country code:</label>
+		<input list = 'country codes' name="code" placeholder='choose your country-code number'>
+		<datalist id = 'country codes'>
+			<option value = '+234'>
+			<option value = '+345'>
+			<option value = '+123'>
+			<option value = '+456'>
+		</datalist><br>
+		<br/><br>
+        <label for="">Phone number:</label>
+			<input type = 'text' name="phone" placeholder='e.g, 07067490145' required><br/>
+		<br/><br>
+	
+        <label for="">States:</label>
+		<input list = 'states' placeholder='choose a state' name="state" required>
+				<datalist id = 'states'>
+				<nav class='topnav' value='scroll'>
+			<option value = 'Abakaliki'>
+			<option value = 'Akwabom'>
+			<option value = 'Abuja'>
+			<option value = 'Awka'>
+			<option value = 'A'>
+			<option value = 'Balyesa'>
+			<option value = 'Benue'>
+			<option value = 'Borno'>
+			<option value = 'Delta'>
+			<option value = 'Dautse'>
+			<option value = 'Enugu'>
+			<option value = 'Edo'>
+			<option value = 'Jigawa'>
+			<option value = 'Kwara'>
+			<option value = 'Kaduna'>
+			<option value = 'Kano'>
+			<option value = 'Katsina'>
+			<option value = 'Kogi'>
+			<option value = 'Lagos'>
+			<option value = 'Osun'>
+			<option value = 'Ondo'>
+			<option value = 'Oyo'>
+			<option value = 'Porthacourt'>
+			<option value = 'Pleataeu'>
+			<option value = 'Rivers'>
+			<option value = 'Calabar'>
+			<option value = 'Ogun'>
+			<option value = 'Sokoto'>
+			<option value = 'Taraba'>
+			<option value = 'Niger'>
+			<option value = 'mytu'>
+			<option value = 'Nederland'>
+			<option value = 'lake-chad'>
+			<option value = 'Uphost'>
+			<option value = 'Unukuru'>
+			<option value = 'Others'>
+			</nav>
+		</datalist><br><br>
+		<br/>
+        <label for="">Upload your picture:</label>
+				<input type="file" name="img"><br><br>
+			<button>Register</button>
+			<!-- </center> -->
+			</fieldset>
+        </form>
+    </div>
+</center>
+	<br><br>
+	<footer style="height:60px;background-color:rgba(100, 94, 94, 0.562);">
+        <strong class="fame">
+       Courtesy:<br>
+       Haweytech Unlimited<br>
+       Technologies for better World(Nigeria CHAPTER)
+</strong>
+   <b>Powered by 
+<a href="default.html" target="_blank" style="font-size:20px;
+color:ghostwhite;">Haweytech</a>
+</b>
+</footer>
+</body>
+</html>

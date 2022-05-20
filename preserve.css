@@ -1,0 +1,181 @@
+/* W3.CSS 2.84 Dec 2016 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+/* html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} */
+/* html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden} */
+
+/* html,body{line-height:1.5}
+html{box-sizing:border-box;overflow-x:hidden}body{margin: 0} */
+@media (max-width:600px){
+    .maque{margin-top: 150px;margin-bottom: 0;}
+    #imaje{width: 100px;margin-left: 0px;}
+    .h3-nav-width{
+        margin-left: -6px;
+        max-width: 100px;
+        display: none;
+    }
+    .h4sa{font-size: 10px;} 
+    .h3-main{width: 90%;}
+    .bgor{background-color: ghostwhite;height:100px!important;}
+    /* .topimg{
+        max-width: 50%;
+    }  */
+    .logimg{
+        width: 100%;
+
+    }
+    
+}
+.h4sa{font-family: Bauhaus 93;
+    color: brown;
+    text-decoration: underline;
+}
+.h3-nav-width{
+    width: 17%;
+    height:100%; 
+    background-color: rgba(165, 42, 42, 0.041);
+    position:fixed;
+    z-index: 1;
+    overflow:scroll;
+    
+}
+.h3-bold{font-size: 30px;font-weight: bold;}
+.h3-main{transition:margin-left .4s}
+#imaje{max-width: 250px;}
+strong{
+    font-family:Monotype corsiva;
+    font-size: 12px;
+    text-align:center;
+    font-weight: bold;
+    text-decoration:underline;
+    /* background-color: ghostwhite; */
+
+}
+.entrep{
+    background-color:lightgray;
+    border-radius: 8px;
+}
+.entrep.li:link{
+    text-decoration:none;
+    color: red;
+}
+.entrep.li:visited{
+    text-decoration:none;
+    color: rgb(5, 5, 75);
+}
+.entrep li:hover{
+    color: white;
+    background-color: grey;
+    font-size: 18px;
+    padding: 2px;
+    border-radius: 0 5px 0 5px;
+}
+.entrep.li:active{
+    color: green;
+}
+.entrep li{
+    /* text-decoration: none; */
+    color: white;
+    font-family: Embassy BT;
+    font-weight:lighter;
+    font-size: 18px;
+    text-align: left;
+    margin-left: -12px;
+}
+.entrep1 i{
+    background-color: rgb(109, 107, 107);
+    font-family: Magneto;
+    text-align: right;
+    color: white;
+    font-weight: bolder;
+}
+.entrep1{
+    background: url('health/images/cutcarb.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-weight: bold;
+}
+.entrep2{
+    background: url('images_1/myweb_4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-weight: bold;
+}
+.entrep3{
+    background: url('images_1/front_business_cardtrans.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    font-weight: bold;
+    /* max-width: 30px; */
+}
+/* .entrep3.a{text-decoration: none;color: white} */
+.entrep2 i,.entrep3 i{
+    background-color: rgb(238, 235, 235);
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+.toobld{
+    font-family: Monotype Corsiva;
+    background-color: darkgray;
+    color: red;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 2px;
+    text-decoration: none;
+    border-bottom: 4px solid brown;
+}
+
+.h3-container:after,.h3-panel:after,.h3-row:after,.h3-row-padding:after,.h3-topnav:after,.h3-clear:after,.h3-btn-group:before,.h3-btn-group:after,.h3-btn-bar:before,.h3-btn-bar:after
+{content:"";display:table;clear:both}
+.h3-col,.h3-half,.h3-third,.h3-twothird,.h3-threequarter,.h3-quarter{float:left;width:100%}
+.h3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.h3-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+.h3-container{padding:0.01em 16px}
+.h3-col.s12,.h3-half,.h3-third,.h3-twothird,.h3-threequarter,.h3-quarter{width:99.99999%}
+@media only screen and (min-width:601px){
+.h3-col.m1{width:8.33333%}
+.h3-col.m2{width:16.66666%}
+.h3-col.m3,.h3-quarter{width:24.99999%}
+.h3-col.m4,.h3-third{width:33.33333%}
+.h3-col.m5{width:41.66666%}
+.h3-col.m6,.h3-half{width:49.99999%}
+.h3-col.m7{width:58.33333%}
+.h3-col.m8,.h3-twothird{width:66.66666%}
+.h3-col.m9,.h3-threequarter{width:74.99999%}
+.h3-col.m10{width:83.33333%}
+.h3-col.m11{width:91.66666%}
+.h3-col.m12{width:99.99999%}}
+@media only screen and (min-width:993px){
+.h3-col.l1{width:8.33333%}
+.h3-col.l2{width:16.66666%}
+.h3-col.l3,.h3-quarter{width:24.99999%}
+.h3-col.l4,.h3-third{width:33.33333%}
+.h3-col.l5{width:41.66666%}
+.h3-col.l6,.h3-half{width:49.99999%}
+.h3-col.l7{width:58.33333%}
+.h3-col.l8,.h3-twothird{width:66.66666%}
+.h3-col.l9,.h3-threequarter{width:74.99999%}
+.h3-col.l10{width:83.33333%}
+.h3-col.l11{width:91.66666%}
+.h3-col.l12{width:99.99999%}}
+.h3-content{max-width:980px;margin:auto}
+.h3-rest{overflow:hidden}
+.h3-row-padding,.h3-row-padding>.h3-half,.h3-row-padding>.h3-third,.h3-row-padding>.h3-twothird,.h3-row-padding>.h3-threequarter,.h3-row-padding>.h3-quarter,.h3-row-padding>.h3-col{padding:0 8px}
+.h3-border{border:1px solid #ccc!important}
+.h3-padding-large{padding:12px 24px!important}
+.h3-center{text-align: center!important;}
+.myfont{
+    font-family: lucida calligraphy;
+    font-size: 15px;
+    font-weight: bold;
+}
+strong.fame{
+    color:white;
+    float:right;
+    font-size: 14px;
+    text-decoration-color: #ddd;
+  }

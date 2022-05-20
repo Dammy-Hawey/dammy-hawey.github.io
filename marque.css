@@ -1,0 +1,164 @@
+.example1 {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+  }
+  /* .example1 h3 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      line-height: 50px;
+      text-align: center; */
+  
+      /* Starting position *
+         -moz-transform:translateX(100%);
+         -webkit-transform:translateX(100%);	
+         transform:translateX(100%);
+  
+   /* Apply animation to this element *	
+         -moz-animation: example1 15s linear infinite;
+         -webkit-animation: example1 15s linear infinite;
+         animation: example1 15s linear infinite;
+  }*/
+  
+  /* Move it (define the animation) */
+        @-moz-keyframes example1 {
+         0%   { -moz-transform: translateX(100%); }
+         100% { -moz-transform: translateX(-100%); }
+        }
+        @-webkit-keyframes example1 {
+         0%   { -webkit-transform: translateX(100%); }
+         100% { -webkit-transform: translateX(-100%); }
+        }
+        @keyframes example1 {
+         0%   { 
+         -moz-transform: translateX(100%); /* Firefox bug fix */
+         -webkit-transform: translateX(100%); /* Firefox bug fix */
+         transform: translateX(100%); 		
+         }
+         100% { 
+         -moz-transform: translateX(-100%); /* Firefox bug fix */
+         -webkit-transform: translateX(-100%); /* Firefox bug fix */
+         transform: translateX(-100%); 
+         }
+        }
+
+
+        .marquee {
+            margin: 0 auto;
+            width: 100%;
+            height: 30px;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            position: relative;
+          }
+          .marquee:before,
+          .marquee:after {
+            position: absolute;
+            top: 0;
+            width: 50px;
+            height: 30px;
+            content: "";
+            z-index: 1;
+          }
+          .marquee:before {
+            left: 0;
+            background: linear-gradient(to right, red 10%, transparent 80%);
+          }
+          .marquee:after {
+            right: 0;
+            background: linear-gradient(to left, red 10%, transparent 80%);
+          }
+          .marquee__content,.two {
+            width: 300%;
+            display: flex;
+            line-height: 30px;
+            animation: marquee 15s linear infinite forwards;
+          }
+          .marquee__content:hover, .two:hover {
+            animation-play-state: paused;
+          }
+          .list-inline, .two{
+            display: flex;
+            justify-content: space-around;
+            width: 33.33%;
+            /* reset list */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          @keyframes marquee {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-66.6%);
+            }
+          }
+
+          .nut{
+              padding:5px;
+              border-radius:3px 3px 0px 3px;
+              border: 0.5px solid darkgrey;
+              /* float: ; */
+          }
+          .diplay{
+            padding: 0;
+            float: left;
+            /* margin-left: 55px; */
+        }
+          .margin-bottom{
+              margin-bottom: 3px!important;
+          }
+          .boxreduct1{
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),
+            0 2px 10px 0 rgba(0,0,0,0.12)!important;
+         }
+         .boxreduct2{
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),
+            0 6px 20px 0 rgba(0,0,0,0.19)!important;
+         }
+         .boxreduct3{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
+            0 6px 20px 0 rgba(0,0,0,0.19)!important;
+         }
+          .display{
+              padding: 0 3px;
+          }
+          .box-container{
+              padding:16px;
+          }
+          .box-container::after{
+              content: "";
+              display: block;
+              clear: both;
+          }
+          strong.fame{
+            color:white;
+            float:right;
+            font-size: 14px;
+            text-decoration:none;
+          }
+          .firstdiet{
+            color:green;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            /* margin-left: 40px; */
+          }
+
+          /* div {
+            width: 300px;
+            height: 50px;
+            position: fixed;
+            inset: 0;
+            margin: auto;
+            animation: animate 10s linear infinite alternate;
+            outline: 1px solid;
+          }
+          
+          @keyframes animate {
+            0% { outline-width: 1px; }
+            100% { outline-width: 50px; }
+          } */

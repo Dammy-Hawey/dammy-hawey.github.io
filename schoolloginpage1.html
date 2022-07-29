@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>De'excelleceSchl.com/login-page</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="Css/css/all.css">
+    <link rel="stylesheet" href="awosApp.css">
+    <script type="text/javascript">
+    var attempt = 3;
+    function validate(){
+        var name = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (name == "Damola" && password == "loginD"){
+        alert("You've login successfully!");
+        window.location = "awosApp.html";
+        return true;
+    }
+    else{
+        attempt --;
+        alert("You have left " + attempt + " attempt");
+
+        if (attempt == 0){
+        document.getElementById("username").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("email").disabled = true;
+        return false;
+    }
+    }
+
+
+    // this is for email validation using regular expression
+/*
+    \d - match any digit (equal to [0-9])
+    \w - match any character [a-z,A-Z,0-9, & _]
+*/
+    // var emailTxt = document.getElementById("email").value;
+    // var regex = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})(.[a-z]{2,8})$/;
+    //     if (regex.test(emailTxt)){
+    //         document.getElementById(labl).innerHTML = "Valid";
+    //         document.getElementById(labl).style.visibility = "visible";
+    //         document.getElementById(labl).style.color = "green";
+    //     }
+    //     else{
+    //         document.getElementById(labl).innerHTML = "Inalid";
+    //         document.getElementById(labl).style.visibility = "visible";
+    //         document.getElementById(labl).style.color = "red";
+    //     }
+    }
+
+    </script>
+    <style>
+body::after{
+    content: "";
+    background: url('lib7.jpeg ') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backface-visibility: hidden; */
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: -250px;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+    }
+@media screen {
+.main{
+    width:60%;
+    margin-left:230px;
+} 
+img{width: 200px}
+}
+
+@media (max-width:600px) {
+body::after{bottom: -520px;}
+.main{
+    width:80%;
+    margin-left:15px;}
+img{width: 120px;}
+.fame{
+    font-size: 12px;
+    text-align: center;
+}
+#betw{visibility: hidden;}
+#a2,#radi{
+    font-size: 14px;
+    width: 2px;
+}
+/* .imglogo{margin-left:0;margin-right:0;padding:0;} */
+/* .formi{margin-left:0;margin-right:0;} */
+}
+.lnki,#all-a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#a2{
+    color: rgb(2, 2, 68);
+    text-decoration:line;
+    font-weight:500;
+    font-style: italic;
+}
+#all-a{
+    font-size: 45px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.newacct:hover, .lnki:hover, button:hover{
+    background-color: dimgray;
+    color: ghostwhite;
+    font-weight: bold;
+}
+.newacct{
+    background-color:none;
+    border: 2px solid rgb(2, 2, 68);
+    border-radius: 5px;
+    font-size: 15px;
+    /* width:120px; */
+}
+.fame{
+    color:rgb(2, 2, 68);
+    float:right;
+    /* font-size: 14px; */
+    /* text-decoration-color: #ddd; */
+    }
+.main{
+    margin-top: 30px;
+    /* background-color: rgba(255, 228, 196, 0.486); */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.22),
+    0 18px 45px 0 rgba(0,0,0,0.21)!important;
+    
+}
+/* .imglogo{margin-left: 20%;margin-right: 20%;} */
+/* .formi{margin-left: 20%;margin-right: 20%;} */
+.fil{
+    border: none;
+    color: black;
+    border-bottom: 2px solid rgb(2, 2, 68);
+    /* background-color:rgba(255, 228, 196, 0.452); */
+    /* width: 300px; */
+    /* font-size: 20px; */
+
+}
+h3{
+    font-size:40px;
+    color: rgb(2, 2, 68);
+}
+#clor{
+    color: darkred;
+    font: 16px bold;
+}
+button{
+    color: rgb(2, 2, 68);
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 20px;
+}
+/* body{
+    style="background-color: rgba(255, 235, 205, 0.644);"
+} */
+.h1styln{
+    background-color:rgba(2, 2, 68, 0.808);
+    color:yellow;
+    border-radius: 0px 10px 0px 0px;
+    padding: 1px;
+    width:auto;
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <h2 class="h1styln">
+        De'Excellence Nursery & Prymary School || De'Excellence College (COMING SOON..!) <br>
+        ---We train and Tutor your Ward(s) with the fear of God...Thanks for your trust---
+    </h2>
+    <!-- <center> -->
+        <div class="h3-row">
+            <!-- <center> -->
+            
+            <!-- <div class="h3-col h3-container" style="width: 20%;">
+                
+            </div> -->
+            <div class="main h3-col h3-container">
+                    <img src="reallogo.png" alt="casor">
+                <form action="awosApp.html" method="POST" target="-blank">
+                    <h3>Students Login page</h3>
+                    <i class="fas fa-user"></i>&nbsp;<input class="fil" type="text" name="username" id="username" placeholder="username" required><br><br>
+                    <i class="fas fa-mail-bulk"></i>&nbsp;<input class="fil" type="email" name="email" id="email" placeholder="email" required><br><br>
+                    <!-- <label id="labl" style="color:red;visibility:hidden">Invalid!</label><br> -->
+                    <i class="fas fa-key"></i>&nbsp;<input class="fil" type="password" name="password" id="password" placeholder="password" required><br><br>
+                    <!--<img src="" alt="contact"><input type="radio" name="remember" required> -->
+                    <input type="radio" id="radi"> Remember me &nbsp;
+                    <b id="betw">|</b> &nbsp;
+                    <a id="a2" href="#">forgot password?</a><br><br>
+                    <button type="submit" name="submit" id="submit" onclick="validate()">Login</button><br>
+                    <p><a class="lnki" href="#">Create account</a></p>
+                    <i id="clor">or login with</i>&nbsp;&nbsp;
+                    <a id="all-a" href="https://accounts.google.com">
+                    <img src="google1.png" alt="G+" style="width: 50px;">
+                    </a>
+                    <!-- <a id="all-a" class="g-signin2" data-onsuccess="onSinIn"
+                     href="#">G+</a> -->
+                </form>
+            <!-- </div>
+            <div class="h3-col h3-container" style="width: 20%;"> -->
+                <!-- <a href="example.html">click here</a> -->
+                   <!-- <p>20%</p> -->
+                </div>
+        </div>
+    <!-- </center> -->
+    <br>
+    <br>
+    <footer style="height:auto;padding: 8px;background-color:rgba(100, 94, 94, 0.562);">
+        <strong class="fame">
+       Courtesy:
+       Haweytech Inc.
+       </strong><br>
+   <b>Powered by: 
+<a href="default.html" target="_blank">Haweytech</a> <br><i>Technologies for better World!</i>
+</b>
+</footer>
+</body>
+</html>

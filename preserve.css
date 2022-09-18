@@ -76,7 +76,7 @@ strong{
 .entrep li{
     /* text-decoration: none; */
     color: white;
-    font-family: Embassy BT;
+    font-family:coursive;
     font-weight:lighter;
     font-size: 18px;
     text-align: left;
@@ -138,11 +138,11 @@ strong{
 .h3-padding-24{padding-top:24px!important;padding-bottom:24px!important}
 .h3-padding-32{padding-top:32px!important;padding-bottom:32px!important}
 .h3-container{padding:0.01em 16px}
-.h3-col.s12,.h3-half,.h3-third,.h3-twothird,.h3-threequarter,.h3-quarter{width:99.99999%}
+.h3-col.s12,.h3-half,.h3-third,.h3-twothird,.h3-threequarter,.h3-quarter,.h3-myform{width:99.99999%}
 @media only screen and (min-width:601px){
 .h3-col.m1{width:8.33333%}
 .h3-col.m2{width:16.66666%}
-.h3-col.m3,.h3-quarter{width:24.99999%}
+.h3-col.m3,.h3-quarter,.h3-myform{width:24.99999%}
 .h3-col.m4,.h3-third{width:33.33333%}
 .h3-col.m5{width:41.66666%}
 .h3-col.m6,.h3-half{width:49.99999%}
@@ -155,7 +155,7 @@ strong{
 @media only screen and (min-width:993px){
 .h3-col.l1{width:8.33333%}
 .h3-col.l2{width:16.66666%}
-.h3-col.l3,.h3-quarter{width:24.99999%}
+.h3-col.l3,.h3-quarter,.h3-myform{width:24.99999%}
 .h3-col.l4,.h3-third{width:33.33333%}
 .h3-col.l5{width:41.66666%}
 .h3-col.l6,.h3-half{width:49.99999%}
@@ -167,7 +167,7 @@ strong{
 .h3-col.l12{width:99.99999%}}
 .h3-content{max-width:980px;margin:auto}
 .h3-rest{overflow:hidden}
-.h3-row-padding,.h3-row-padding>.h3-half,.h3-row-padding>.h3-third,.h3-row-padding>.h3-twothird,.h3-row-padding>.h3-threequarter,.h3-row-padding>.h3-quarter,.h3-row-padding>.h3-col{padding:0 8px}
+.h3-row-padding,.h3-row-padding>.h3-half,.h3-row-padding>.h3-third,.h3-row-padding>.h3-twothird,.h3-row-padding>.h3-threequarter,.h3-row-padding>.h3-quarter,.h3-myform,.h3-row-padding>.h3-col{padding:0 8px}
 .h3-border{border:1px solid #ccc!important}
 /* .h3-padding{padding:8px 16px!important} */
 .h3-btn,.h3-btn-block{border:none;display:inline-block;outline:0;padding:6px 16px;vertical-align:middle;overflow:hidden;text-decoration:none!important;color:#fff;background-color:#000;text-align:center;cursor:pointer;white-space:nowrap}
@@ -231,18 +231,181 @@ p.h3-differ:nth-child(2){
     padding:0 8px;
     border-radius: 5px;
 } 
+.h3-container h1{
+    color: #960014;
+}
+.h3-container .bline{
+    color: #960014;
+    font-size: 25px;
+    font-weight: bold;
+}
+.h3-contactsect h4{
+    color: #960014;
+    font-size: 25px;
+}
 .foot{margin: 0 50px 0 50px}
 /* .nomargin{
     height:80px;
     background-color:rgba(100, 94, 94, 0.562);
     margin: 0 50px 0 50px
 } */
+.h3-btn1{
+    border-radius: 5px;
+    border: none;
+    border-bottom:3px solid rgb(75, 75, 2);
+    font-weight: bold;
+    display:inline-block;
+    /* outline:0; */
+    padding:10px;
+    /* vertical-align:middle; */
+    /* overflow:hidden; */
+    text-decoration:none!important;
+    color:#fff;
+    background-color:#960014;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+}
+.h3-input1{
+    padding:10px;
+    display:block;
+    border-radius:5px;
+    border:none;
+    border-bottom:2px solid rgb(75, 75, 2);
+    width:100%;
+}
+.h3-myform{
+    float: left;
+    width: 100%;
+}
+
+.h3-myform label{
+    color: #960014;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.h3-group1{
+    margin-top:8px;
+    margin-bottom:10px;
+}
+.round-border1{
+    border-radius:5px 0 5px;
+    border: 1px solid whitesmoke;
+}
+.round-border2{
+    border-radius:5px 0 5px 0;
+    border: 1px solid whitesmoke;
+}
+.round-border3{
+    border-radius:5px 0 5px 0;
+    border: 1px solid whitesmoke;
+}
 .h3-input-group,.h3-group{margin-top:24px;margin-bottom:24px}
 .h3-teal,.h3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
 .h3-border{border:1px solid #ccc!important}
+.h3-teal-middle{
+    color: #fff!important;
+    background-color: #960014ab!important;
+}
 .h3-grey{color:#000;background-color:#9e9e9e}
 .h3-dark-grey,.h3-hover-dark-grey:hover,.h3-dark-gray,.h3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
 .h3-input{display:block;padding:8px 16px}.h3-navbar li .h3-btn,.h3-navbar li .h3-input{border:none;outline:none;width:100%}
 .h3-input-group,.h3-group{margin-top:24px;margin-bottom:24px}
 .h3-input{padding:8px;display:block;border:none;border-bottom:1px solid #808080;width:100%}
 .h3-label{color:#009688}.h3-input:not(:valid)~.h3-validate{color:#f44336}
+
+.mainbox{
+    transition:margin-left .4s;
+    /* max-width:980px; */
+    margin:auto
+}
+.box-quarter{
+    float:left;
+    /* width:100%; */
+  }
+  .income{
+    border-bottom:3px solid white;
+    border-radius: 8px;
+    /* background-color:lightgreen; */
+    color:#960014;
+    padding:10px;
+    text-align:center;
+    }
+.container{
+  /* background-color:grey; */
+  border:1px solid rgba(255, 255, 255, 0.562);
+  border-radius:0 8px 0 8px;
+  padding:0.01em 16px;
+  margin-left:20px;
+  margin-bottom:10px;
+  width: 45%;
+    }
+.container12{
+  /* background-color:grey; */
+  border:1px solid rgba(252, 32, 32, 0.877);
+  border-radius:0 8px 0 8px;
+  padding:0.01em 16px;
+  /* margin-left:20px; */
+  margin-bottom:10px;
+  width: 100%;
+    }
+.container1{
+  /* background-color:grey; */
+  border:1px solid #96001494;
+  border-radius:0 8px 0 8px;
+  border-bottom: 1px;
+  padding:10px;
+  /* margin-left:20px; */
+  margin-bottom:5px;
+  margin-top:10px;
+  width: 100%;
+  float: none;
+  color: ghostwhite;
+}
+.container11{
+    /* background-color:grey; */
+    border:1px solid #96001494;
+    border-radius:0 8px 0 8px;
+    border-bottom: 1px;
+    padding:10px;
+    /* margin-left:20px; */
+    margin-bottom:5px;
+    margin-top:10px;
+    width: 100%;
+    float: none;
+    color: #f44336;
+  }
+.testi1{
+    background-color: #616161;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:0;
+    margin-bottom:20px;
+    margin-top: 30px;
+}
+.testi10{
+    background-color: #616161;
+    display:inline-block;
+    margin-bottom:20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.testi1 img{
+    width: 120px;
+    border-radius: 100px;
+}
+.testi1 p{
+    color:#fff;
+    font-size: 18px;
+}
+.testi1 b{
+    color:#960014;
+}
+.testi10 p{
+    color:#fff;
+    font-size: 18px;
+}
+.testi10 b{
+    color:#960014;
+}

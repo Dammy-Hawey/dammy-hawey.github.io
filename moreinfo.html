@@ -1,43 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InfoAnnex...</title>
-    <link rel="stylesheet" href="newcss.css">
-    <link rel="stylesheet" href="preserve.css">
-    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="newcss.css" />
+    <link rel="stylesheet" href="preserve.css" />
+    <!-- <link rel="stylesheet" href="head.css" /> -->
     <style>
-        
+    body::after{bottom: -80px;}
+
+    @media screen {
+.testi10{
+    margin-left: 70px;
+    margin-right: 30px;
+
+}
+.page-header b{
+    font-size: 30px;
+    font-weight: bold;
+    color: #960014;
+}
+    }
+
+    @media(max-width:600px){
+.testi10{
+    margin-left: 14px;
+    
+}
+.page-header b{
+    font-size: 20px;
+}
+.marginstu{
+    margin-left: 0;
+}
+    }
+    /* @medial 600px end here */
+
+.testi10 a,.container11 a{
+    text-decoration: none;
+    color: white;
+}
+.testi10 b{
+    border-bottom: 3px solid whitesmoke;
+    border-radius:5px ;
+}
+.page-header{
+    text-align: center;
+}
+/* .page-header b{
+    font-size: 30px;
+    font-weight: bold;
+    color: #960014;
+} */
+.page-header p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.marginstu{
+    margin-left: 50px;
+}
     </style>
-</head>
-<body>
+  </head>
+  <body>
+
+    <div class="page-header">
     <h1>InfoExtentio page...!</h1>
-    <div>
-        <div>You are welcome to this page as you explore other featuers of this SITE...</div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
+        <p>You are welcome to <b>De'Excellence COLLEGE </b>Login site...</p>
     </div>
-
-</body>
+      <div class="container12">
+        <h1>Users Login Page</h1>
+        <hr>
+        <div class="testi10">
+            <b>FOR STAFF LOGIN</b><br>
+          <p>
+              This section permitt only the staff to click for login.
+          </p>
+          <br>
+          <button type="submit" class="h3-btn1"><a href="schoolloginpage2.html">CLICK HERE</a></button>
+      </div>
+            
+            <img src="reallogo.png" alt="De'Excellencelogo" style="width:200px;">
+          
+      <div class="testi10">
+        <b>FOR SUDENT LOGIN</b><br>
+      <p>
+          This section permitt only students to click for login.
+      </p>
+      <br>
+      <button type="submit" class="h3-btn1"><a href="schoolloginpage1.html">CLICK HERE</a></button>
+  </div>
+  <br>
+          
+      
+      <!-- </div> -->
+      <div class="container11">
+        <h2>"Dynamism brings flexibility in TEACHING..."</h2>
+        <p>For new users, Please click below to Register!</p>
+        <button type="submit" class="h3-btn1"><a href="deexcellencenewuser.html"> >> Register Here >></a></button>
+        <!-- http://www.google.com/search?q=" -->
+      </div>
+    </div>
+  </body>
 </html>

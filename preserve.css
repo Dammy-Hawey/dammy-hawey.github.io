@@ -16,13 +16,19 @@ html{box-sizing:border-box;overflow-x:hidden}body{margin: 0} */
     }
     .h4sa{font-size: 10px;} 
     .h3-main{width: 90%;}
-    .bgor{background-color: ghostwhite;height:100px!important;}
+    /* .bgor{
+        background-color: ghostwhite;
+        /* height:100px!important; 
+    } */
     /* .topimg{
         max-width: 50%;
     }  */
     .logimg{
         width: 100%;
-
+    }
+    .imgtext{
+        bottom: 0;
+        /* display: none; */
     }
 
 }
@@ -204,9 +210,8 @@ ul.h3-ul{list-style-type:none;padding:0;margin:0}ul.h3-ul li{padding:6px 2px 6px
 .h3-margin-bottom{margin-bottom: 16px!important}
 .h3-xxlarge{color: rgb(15, 177, 23);text-shadow:5px 2px 4px rgb(68, 66, 66);font-size:36px!important}
 .myfont{
-    font-family: lucida calligraphy;
-    font-size: 15px;
-    font-weight:lighter;
+    font-family: lucida;
+    font-size: 16px;
 }
 b.fame{
     color:indigo;
@@ -238,6 +243,14 @@ p.h3-differ:nth-child(2){
     color: #960014;
     font-size: 25px;
     font-weight: bold;
+}
+.changi{
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.changi:hover{
+    background-color:rgba(255, 255, 255, 0.61);
 }
 .h3-contactsect h4{
     color: #960014;
@@ -409,3 +422,73 @@ p.h3-differ:nth-child(2){
 .testi10 b{
     color:#960014;
 }
+.first-head-sec{
+    width: 100%;
+   
+}
+.social-btn{
+    /* width: 8%; */
+    display:block;
+    padding: 8px;
+    border-radius: 5px;
+    border-bottom: 2px solid cyan;
+    float: right;
+    background-color: #f4433675;
+    text-align: center;
+    font-size: 20px;
+}
+.social-btn2{
+    width: 100%;
+    display:block;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: 2px solid cyan;
+    float: right;
+    background-color: #f4433675;
+    color:darkgreen;
+    font-size: 35px;
+    text-align: center;
+    
+}
+.s1, .s2, .s3, .s4{
+    cursor: pointer;
+    margin: 4px;
+    padding: 2px;
+    border: 1px solid cyan;
+    border-radius: 3px;
+    
+}
+.s1:hover, 
+.s2:hover, 
+.s3:hover, 
+.s4:hover{
+    margin: 3px;
+    padding: 3px;
+    background-color: #beb3b3;
+
+}
+.s1, .s2, .s3, .s4{
+    text-decoration: none;
+}
+.s1{
+    color:blue;
+}
+.s2{
+    color:red;
+}
+.s3{
+    color:green;
+}
+.s4{
+    color:#960014;
+}
+/* .imgtext{
+    bottom: 0;
+} */
+/* .first-head-text{
+    width:60%;
+    display:flexbox;
+    margin-left:30px;
+    text-align: center;
+
+} */

@@ -437,7 +437,7 @@ p.h3-differ:nth-child(2){
     border-radius: 5px;
     border-bottom: 2px solid cyan;
     float: right;
-    background-color: #f4433675;
+/*     background-color: #f4433675; */
     text-align: center;
     font-size: 20px;
 }
@@ -448,9 +448,9 @@ p.h3-differ:nth-child(2){
     border-radius: 5px;
     border-bottom: 2px solid cyan;
     float: right;
-    background-color: #f4433675;
+/*     background-color: #f4433675; */
     color:darkgreen;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     
 }

@@ -435,7 +435,7 @@ p.h3-differ:nth-child(2){
     display:block;
     padding: 8px;
     border-radius: 5px;
-    border-bottom: 2px solid cyan;
+    border-bottom: 2px solid #616161;
     float: right;
 /*     background-color: #f4433675; */
     text-align: center;
@@ -446,7 +446,7 @@ p.h3-differ:nth-child(2){
     display:block;
     padding: 5px;
     border-radius: 5px;
-    border-bottom: 2px solid cyan;
+    border-bottom: 2px solid #616161;
     float: right;
 /*     background-color: #f4433675; */
     color:darkgreen;
@@ -458,7 +458,7 @@ p.h3-differ:nth-child(2){
     cursor: pointer;
     margin: 4px;
     padding: 2px;
-    border: 1px solid cyan;
+    border: 1px solid ;
     border-radius: 3px;
     
 }

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-library(e-books)</title>
+    <link rel="stylesheet" href="spec.css">
+    <link rel="stylesheet" href="headerandfooter.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .top{
+            text-align: center;
+        }
+
+        .card {
+            color: #000000;
+            text-align: center;
+            background-color: #d2cfd6e8;
+            padding: 10px;
+            margin: 20px auto; /* Center the card */
+            border-bottom: 5px solid #0f0f0f;
+            border-radius: 20px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto; /* Make image responsive */
+        }
+
+        table {
+            width: 100%; /* Full-width table */
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid rgb(2, 2, 65);
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .para {
+            font-size: 18px;
+            color: black;
+        }
+
+        /* Mobile Styles */
+        @media screen and (max-width: 600px) {
+            .card {
+                padding: 0;
+                margin: 10px;
+            }
+
+            strong.fame {
+                font-size: 8px;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto; /* Scrollable table */
+                white-space: nowrap;
+            }
+
+            th, td {
+                font-size: 10px;
+            }
+        }
+
+        /* Tablet Styles */
+        @media screen and (max-width: 768px) {
+            .card {
+                max-width: 90%;
+            }
+
+            th, td {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="dam-top">
+		<ul class="dam-navbar dam-wide dam-padding-8 dam-card-2">
+			<li>
+				<a href="deexcellence.html" class="dam-margin-left"><b>De'Excellence</b> College</a>
+			</li>
+			<!-- Float links to the right. Hide them on small screens -->
+			<li dam-right >
+				<a href="#projects" class="dam-left">Tutorials</a>
+				<a href="#about" class="dam-left">About Us</a>
+				<a href="#contact" class="dam-left">Our Contact</a>
+			</li>
+		</ul>
+	</div>
+    <br>
+    <div class="top">
+        <h3 style="font-family:Old English Text MT;"> Study to show thyself approved a...(2Timothy 2:15)</h3>
+        <img src="images1/e-book.jpg" alt="e-book image">
+        <p class="para">You are welcome to this page, choose any book of your desire to download.</p>
+    </div>
+
+    <div class="card">       
+        <table>
+            <tr>
+                <th>S/N</th>
+                <th>Book Titles</th>
+                <th>Availability</th>
+                <th>Download Size</th>
+                <th>Author</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="pdfs/new man.pdf">Power of Thought</a></td>
+                <td>Available</td>
+                <td>20Mb</td>
+                <td>James O. Sunday</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="pdfs/The Power of the Tongue.pdf">The Power of the Tongue</a></td>
+                <td>Available</td>
+                <td>50Mb</td>
+                <td>Kenneth Copeland</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="pdfs/ccdf.pdf">A Call to the Christian Dance Fellowship</a></td>
+                <td>Available</td>
+                <td>50Mb</td>
+                <td>Unknown</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="pdfs/wake-up and change.pdf">Wake-Up and Change</a></td>
+                <td>Available</td>
+                <td>50Mb</td>
+                <td>Lisa Bevere</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="pdfs/Waiting and Dating_ A Sensible.pdf">Waiting and Dating_ A Sensible</a></td>
+                <td>Available</td>
+                <td>65Mb</td>
+                <td>Myles Munroe</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a href="pdfs/Understanding_Men.pdf">Understanding Men</a></td>
+                <td>Available</td>
+                <td>350Mb</td>
+                <td>P.J. Granger</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><a href="pdfs/UnderstandingThe Anointing.pdf">Understanding The Anointing</a></td>
+                <td>Available</td>
+                <td>280Mb</td>
+                <td>Kenneth E. Hagin</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><a href="pdfs/The Smart Money Woman.pdf">The Smart Money Woman</a></td>
+                <td>Available</td>
+                <td>300Mb</td>
+                <td>Arese Ugwu</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><a href="pdfs/The Price is not Greater Than God's Grace.pdf">The Price...God's Grace</a></td>
+                <td>Available</td>
+                <td>120Mb</td>
+                <td>Oretha Hagin</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><a href="pdfs/The 5 Love Languages.pdf">The 5 Love Languages</a></td>
+                <td>Available</td>
+                <td>80Mb</td>
+                <td>Gary Chapman</td>
+            </tr>
+            <tr>
+                <th colspan="5"><h3>Academics/Educational Books.</h3></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="pdfs/Digital Electronics.pdf">Digital Electronics</a></td>
+                <td>Available</td>
+                <td>70Mb</td>
+                <td>Anil K. Maini</td>
+            </tr>
+            <tr>
+                <th colspan="5"><h3>School Materials.</h3></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td><a href="pdfs/CompTIA A+ 220-701.pdf">CompTIA A+ 220-701</a></td>
+                <td>Available</td>
+                <td>55Mb</td>
+                <td>CompTIA A+</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="pdfs/A+ Certification Bible.pdf">A+ Certification Bible</a></td>
+                <td>Available</td>
+                <td>55Mb</td>
+                <td>Edward Tetz</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="footer-margin">
+        <b><a href='help.html' style="color:white">Help</a> | <a href='contact.html' style="color:white">Contact</a> | <a href='login.html' style="color:white">Login</a></b>
+    </footer>
+    <footer>
+        <b>Powered by</b> <a href="default.html" target="_blank" style="font-size: 20px; color: ghostwhite;">Haweytech</a>
+    </footer>
+</body>
+</html>

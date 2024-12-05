@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>De'excelleceSchl.com/login-page</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="Css/css/all.css">
+    <link rel="stylesheet" href="awosApp.css">
+    <script type="text/javascript">
+    var attempt = 3;
+    function validate(){
+        var name = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (name == "Damola" && password == "loginD"){
+        alert("You've login successfully!");
+        window.location = "awosApp.html";
+        return true;
+    }
+    else{
+        attempt --;
+        alert("You have left " + attempt + " attempt");
+
+        if (attempt == 0){
+        document.getElementById("username").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("password").disabled = true;
+        document.getElementById("email").disabled = true;
+        return false;
+    }
+    }
+
+
+    // this is for email validation using regular expression
+/*
+    \d - match any digit (equal to [0-9])
+    \w - match any character [a-z,A-Z,0-9, & _]
+*/
+    // var emailTxt = document.getElementById("email").value;
+    // var regex = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,10})(.[a-z]{2,8})$/;
+    //     if (regex.test(emailTxt)){
+    //         document.getElementById(labl).innerHTML = "Valid";
+    //         document.getElementById(labl).style.visibility = "visible";
+    //         document.getElementById(labl).style.color = "green";
+    //     }
+    //     else{
+    //         document.getElementById(labl).innerHTML = "Inalid";
+    //         document.getElementById(labl).style.visibility = "visible";
+    //         document.getElementById(labl).style.color = "red";
+    //     }
+    }
+
+    </script>
+    <style>
+body::after{
+    content: "";
+    background: url('lib7.jpeg ') fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* backface-visibility: hidden; */
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: -450px;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
+    }
+@media screen {
+.main{
+    width:60%;
+    margin-left:230px;
+} 
+img{width: 200px}
+}
+
+@media (max-width:600px) {
+body::after{bottom: -520px;}
+.main{
+    width:80%;
+    margin-left:30px;}
+img{width: 120px;}
+.fame{
+    font-size: 12px;
+    text-align: center;
+}
+#betw{visibility: hidden;}
+#a2,#radi{
+    font-size: 14px;
+    width: 2px;
+}
+/* .imglogo{margin-left:0;margin-right:0;padding:0;} */
+/* .formi{margin-left:0;margin-right:0;} */
+}
+.lnki,#all-a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#a2{
+    color: rgb(2, 2, 68);
+    text-decoration:line;
+    font-weight:500;
+    font-style: italic;
+}
+#all-a{
+    font-size: 45px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.newacct:hover, .lnki:hover, button:hover{
+    background-color: dimgray;
+    color: ghostwhite;
+    font-weight: bold;
+}
+.newacct{
+    background-color:none;
+    border: 2px solid rgb(2, 2, 68);
+    border-radius: 5px;
+    font-size: 15px;
+    /* width:120px; */
+}
+.fame{
+    color:rgb(2, 2, 68);
+    float:right;
+    /* font-size: 14px; */
+    /* text-decoration-color: #ddd; */
+    }
+.main{
+    margin-top: 30px;
+    /* background-color: rgba(255, 228, 196, 0.486); */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.22),
+    0 18px 45px 0 rgba(0,0,0,0.21)!important;
+    
+}
+/* .imglogo{margin-left: 20%;margin-right: 20%;} */
+/* .formi{margin-left: 20%;margin-right: 20%;} */
+.fil{
+    border: none;
+    color: black;
+    border-bottom: 2px solid rgb(2, 2, 68);
+    /* background-color:rgba(255, 228, 196, 0.452); */
+    /* width: 300px; */
+    /* font-size: 20px; */
+
+}
+h3{
+    font-size:40px;
+    color: rgb(2, 2, 68);
+}
+#clor{
+    color: darkred;
+    font: 16px bold;
+}
+button{
+    color: rgb(2, 2, 68);
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 18px;
+}
+/* body{
+    style="background-color: rgba(255, 235, 205, 0.644);"
+} */
+.h1styln{
+    background-color:rgba(2, 2, 68, 0.808);
+    color:yellow;
+    border-radius: 0px 10px 0px 0px;
+    padding: 1px;
+    width:auto;
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+<h2 class="h1styln">
+    De'Excellence Nursery & Prymary School || De'Excellence College (COMING SOON..!) <br>
+    ---We train and Tutor your Ward(s) with the fear of God...Thanks for your trust---
+</h2>
+
+    <div class="h3-row">
+        
+        <div class="main h3-container">
+                <img src="reallogo.png" alt="casor">
+                <form action="staffreg2.php" method="POST" enctype="multipart/form-data" target="_blank">
+
+                <h3>Staffs details Reg. page</h3>
+                <p>Please enter your details correctly in the boxes below!</p>
+                <br>
+                <label for="firstname">First name:</label><br>
+                <input type="text" name="firstName" required><br>
+                <label for="middlename">Other name:</label><br>
+                <input type="text" name="otherName" required><br>
+                <label for="lastname">Last name:</label><br>
+                <input type="text" name="lastName" required><br>
+                <label for="firstname">Gender:</label><br>
+                <select name="gender" id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" name="dob" required><br>
+                <label for="phone">Phone number:</label><br>
+                <input type="phone" name="phone" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" name="email" required><br>
+                <label for="address">Home Address:</label><br>
+                <input type="text" name="address" required><br>
+                
+                
+                <label for="state">State:</label><br>
+                <input list="states" placeholder="Choose a state" name="state" required>
+                <datalist id="states">
+                    <option value="Abia">
+                    <option value="Akwa Ibom">
+                    <option value="Abuja">
+                    <option value="Anambra">
+                    <option value="Bayelsa">
+                    <option value="Benue">
+                    <option value="Borno">
+                    <option value="Delta">
+                    <option value="Ebonyi">
+                    <option value="Edo">
+                    <option value="Ekiti">
+                    <option value="Enugu">
+                    <option value="Gombe">
+                    <option value="Imo">
+                    <option value="Jigawa">
+                    <option value="Kaduna">
+                    <option value="Kano">
+                    <option value="Katsina">
+                    <option value="Kebbi">
+                    <option value="Kogi">
+                    <option value="Kwara">
+                    <option value="Lagos">
+                    <option value="Nasarawa">
+                    <option value="Niger">
+                    <option value="Ogun">
+                    <option value="Ondo">
+                    <option value="Osun">
+                    <option value="Oyo">
+                    <option value="Plateau">
+                    <option value="Rivers">
+                    <option value="Sokoto">
+                    <option value="Taraba">
+                    <option value="Yobe">
+                    <option value="Zamfara">
+                </datalist><br>
+                
+                <label for="maritalstatus">Marital status</label><br>
+                <select name="maritalStatus" id="maritalStatus" required>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Single">Single</option>
+                </select><br>
+                <!-- <input type="text" name="maritalStatus" required> -->
+                <label for="edulevel">Education level:</label><br>
+                <select name="eduLevel" id="eduLevel" required>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="HND">HND</option>
+                    <option value="NCE">NCE</option>
+                    <option value="ND">ND</option>
+                </select><br>
+                <!-- <input type="text" name="eduLevel" required><br> -->
+                <label for="password">Create Password</label><br>
+                <input type="password" name="password" required><br>
+                <label for="cpassword">Confirm Password</label><br>
+                <input type="password" name="cpassword" required><br>
+                <label for="religion">Religion</label><br>
+                <!-- <input type="text" name="religion" 
+                placeholder="Christianity or Islamic" required><br> -->
+                <select name="religion" id="religion" required>
+                    <option value="Christianity">Christianity</option>
+                    <option value="Islamic">Islamic</option>
+                </select><br>
+                <label for="subject">Subject(s)</label><br>
+                <input type="text" name="subject" 
+                placeholder="seperate subject with comma if more than one (,)" required><br>
+               <br>
+                <label for="healthstatus">Staff's health status:</label><br>
+                <!-- <input type="text" name="healthStatus" 
+                placeholder="Having health challenges or Not?" required><br> -->
+                <select name="healthStatus" id="healthStatus" required>
+                    <option value="Having health challenges">Having health challenges</option>
+                    <option value="Doesn't have any health challenges">Doesn't have any health challenges</option>
+                </select><br>
+                <label for="teachingstatus">Teaching status:</label><br>
+                <!-- <input type="text" name="teachingStatus" 
+                placeholder="Full-time or Part-time" required><br> -->
+                <select name="teachingStatus" id="teachingStatus" required>
+                    <option value="Full-time">Full-time</option>
+                    <option value="Part-time">Part-time</option>
+                </select><br>
+                    Upload your picture:
+                    <input type="file" name="img"><br/> 
+                
+                <button type="submit" name="submit">Submit</button>
+                <p>Already have an account?
+                    <a class="lnki" href="staffloginpage.html">Login here...</a>
+                </p>
+                <p>Please for Staff Registration, meet the Administrator in charge. Thanks.</p>
+                <i id="clor">or login with</i>&nbsp;&nbsp;
+                <a id="all-a" href="https://accounts.google.com">
+                <img src="google1.png" alt="G+" style="width: 50px;">
+                </a>
+                <!-- <a id="all-a" class="g-signin2" data-onsuccess="onSinIn"
+                    href="#">G+</a> -->
+            </form>
+        </div>
+    <br>
+    <br>
+    <footer style="height:auto;padding: 8px;background-color:rgba(100, 94, 94, 0.562);">
+   <br><i>&copy;De'Excellence Nursery and Primary School (2022).</i><br>
+   <b>Powered by: 
+    <a href="default.html" target="_blank">Haweytech</a> 
+</b>
+</footer>
+
+</body>
+</html>

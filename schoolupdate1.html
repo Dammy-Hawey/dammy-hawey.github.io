@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>...UPDATES!</title>
+	<link rel="stylesheet" href="spec.css">
+	<link rel="stylesheet" href="schlupdate.css">
+	<style>
+		/* Base Styles */
+		body, html {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			overflow-x: hidden;
+		}
+		
+		img {
+			width: 100%;
+			height: auto;
+		}
+        .menu{
+			display: none;
+		}
+
+		body::after {
+			content: "";
+			background: url('lib7.jpeg') no-repeat center center fixed;
+			background-size: cover;
+			opacity: 0.3;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: -1;
+		}
+
+		/* Navbar Styles */
+		.dam-top ul {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			list-style: none;
+			padding: 10px 20px;
+			background-color: rgba(0, 0, 0, 0.8);
+			margin: 0;
+			color: white;
+			flex-wrap: wrap;
+		}
+		.dam-top ul a {
+			color: white;
+			text-decoration: none;
+			padding: 10px;
+		}
+
+		/* Main Card */
+		.main-card {
+			max-width: 80%;
+			margin: auto;
+            margin-top: 200px;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.9);
+			border-radius: 10px;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+
+		.card, .tstmy1, .tstmy11, .tstmy12 {
+			background-color: rgba(169, 169, 169, 0.7);
+			border-radius: 10px;
+			padding: 15px;
+			margin-bottom: 20px;
+		}
+        .tstmy1{
+		background-image: url("schlimages/schlimage20.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 12px  12px 0px 12px;
+		/* width: 85%; */
+		color: rgb(10, 10, 37);
+			
+			}
+            /* Styles for Skills Section */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .skill-card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px; /* Adjust width of cards */
+        }
+
+        .skill-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .skill-card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+		hr {
+			height: 2px;
+			background-color: rgb(59, 2, 2);
+			max-width: 80%;
+			margin: 10px auto;
+		}
+
+		.text {
+			font-size: 1.2em;
+			color: black;
+			margin: 15px;
+		}
+        .size{
+		max-width:60%;
+		margin-top:0;
+		/* margin-bottom: 10px; */
+		border-radius: 5px;
+		border-bottom: 5px solid rgb(126, 9, 106);
+	    }
+        #view {
+        text-decoration: none;
+        color: white;
+        }
+        button {
+        border-radius: 5px;
+        padding: 3px;
+        background-color: rgb(13, 13, 31);
+        }
+        button:hover {
+        background-color: rgb(13, 13, 31);
+        padding: 4px;
+        }
+
+		/* Footer */
+		footer {
+			text-align: center;
+			padding: 15px;
+			background-color: rgba(0, 0, 0, 0.7);
+			color: white;
+		}
+
+		/* Media Queries */
+		@media (max-width: 1024px) {
+			.main-card {
+				padding: 10px;
+                margin-top: 200px;
+			}
+			.text {
+				font-size: 1em;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.dam-top ul {
+				flex-direction: column;
+			}
+			.main-card {
+				max-width: 95%;
+				margin: 0;
+                margin-top: 200px;
+				padding: 10px;
+			}
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+		}
+
+		@media (max-width: 600px) {
+			.card, .tstmy1, .tstmy11, .tstmy12 {
+				padding: 10px;
+				width: 95%;
+			}
+			.text {
+				margin: 10px;
+				font-size: 0.9em;
+			}
+			#mesg {
+				font-size: 0.85em;
+			}
+		}
+	</style>
+</head>
+
+<body>
+<div class="dam-top">
+	<ul class="dam-navbar">
+		<li>
+            <a href="deexcellence.html" class="dam-margin-left"><b>De'Excellence College</b></a>
+        </li>
+        <!-- Float links to the right. Hide them on small screens -->
+		<li>
+			<a href="#projects">Tutorials</a>
+			<a href="#about">About Us</a>
+			<a href="#contact">Our Contact</a>
+		</li>
+	</ul>
+</div>
+
+<div class="main-card">
+	<div class="tstmy1">
+		<h1>Welcome to De'Excellence College Updates Page!</h1>
+		<ol style="text-align: left; padding-left: 20px;">
+			<li>Every Monday:: Students Presentations</li>
+			<li>Every Tuesday:: Sanitation</li>
+			<li>Every Wednesday:: SPORTS</li>
+			<li>Every Thursday:: School Internal Debates</li>
+			<li>Every Friday:: Special Programs</li>
+		</ol>
+
+		<ul id="tstmy1">
+			<li>Student gathering for weekend project ==> 1:00pm to 1:10pm</li>
+			<li>Teachers' Reports ==> 1:20pm to 1:30pm</li>
+			<li>School fellowship {45 minutes} ==> 1:15pm to 2:00pm</li>
+		</ul>
+	</div>
+    <div class="tstmy12">
+        <!-- Menu Container -->
+<div class="dam-container dam-content" id="menu">
+   <!-- <center> -->
+      <b class="dam-center dam-padding-48"><span class="dam-tag dam-wide dam-padding-left dam-padding-right">
+           WEEKLY EVENTS</span></b>
+   <!-- </center> -->
+           <br>
+            <br>
+            <div class="dam-row dam-center dam-card-2 dam-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                      <div class="dam-col s6 tablink" style="font-weight:bold;color:rgb(11, 11, 37)">Birthday Celebrants</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                      <div class="dam-col s6 tablink" style="font-weight:bold;color:rgb(11, 11, 37)">Miscellenious</div>
+                    </a>
+                  </div>
+            
+  
+      <div id="Eat" class="dam-container menu dam-padding-48 dam-card-2">
+        <h3>Babatunde Halmond</h3>
+        <p class="dam-text-grey">Mechanical Dept.<br> Born in 1996,<br> Currently in 300level</p><br>
+      
+        <h3>Joseph Adeola</h3>
+        <p class="dam-text-grey">Dept. of Biochemistry,<br> Born in 1998,<br> Currently in 200level</p><br>
+      
+        <h3>Benedict David</h3>
+        <p class="dam-text-grey">Computer Science Dept.<br> Born in 1995,<br> Currently in 400level</p><br>
+      
+        <h3>Oluwasegun Osamen</h3>
+        <p class="dam-text-grey">Dept. of Biology,<br> Born in 1999,<br> Currently in 300level</p><br>
+      
+        <h3>Mattew Osage</h3>
+        <p class="dam-text-grey">Mat.&Met. Dept.<br> Born in 1997,<br> Currently in 500level</p>
+      </div>
+  
+      <div id="Drinks" class="dam-container menu dam-padding-48 dam-card-2">
+        <h3>Loding...</h3>
+        <p class="dam-text-grey">stay tune</p><br>
+      
+        <h3>Loding...</h3>
+        <p class="dam-text-grey">stay tune</p><br>
+      
+        <h3>Materials</h3>
+        <p class="dam-text-grey">Materials are available for every 100 and 200 level Students.</p><br>
+      
+        <h3>Prayer night</h3>
+        <p class="dam-text-grey">Pls be informed of prayer night coming up on 26/04/2019. God bless you!</p><br>
+      
+        <h3>Seminal! Seminal! Seminal!</h3>
+        <p class="dam-text-grey">This is for everybody, Theme:Technology in day to day activities.<br>
+            Date:4th-6th of May 2019 <br> Venue:SCHOOL Auditorium</p>
+      </div> 
+      <!--<img src="images/fruit.jpg" style="width:100%;max-width:1000px;margin-top:32px;"> -->
+    </div>
+        </div>
+        <br>
+          <script src="https://maps.googleapis.com/maps/api/js"></script>
+  
+  <script>
+  // Google Map Location
+  var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+  
+  function initialize() {
+  var mapProp = {
+    center: myCenter,
+    zoom: 12,
+    scrollwheel: false,
+    draggable: false,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+  
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  
+  marker.setMap(map);
+  }
+  
+  google.maps.event.addDomListener(window, 'load', initialize);
+  
+  // Tabbed Menu
+  function openMenu(evt, menuName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" dam-light-grey", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.firstElementChild.className += " dam-light-grey";
+  }
+  document.getElementById("myLink").click();
+  </script>
+
+	<div class="tstmy11">
+		<h2 style="background-color:gray;color:#000;text-align:center">--Let's Be UP and DOING!--</h2>
+		<section id="skills">
+            <h2>Moral Lessons</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>DO YOU KNOW...?</h3>
+                    <p>That life is not always the way you think it is...</p>
+                    <button><a id="view" href="edukation/DO YOU KNOW.pdf">Click here to read more!</a></button>
+                </div>
+                <div class="skill-card">
+                    <h3>Tutorial <i>Samples</i></h3>
+                    <p>
+                        <video class="size" controls>
+                            <source src="edukation/Maths_Quiz.mp4" type="video/mp4">
+                        </video>
+                    </p>
+                    <button><a id="view" href="edukation/DO YOU KNOW.pdf">Click for more!</a></button>
+                </div>
+        
+            </div>
+        </section>
+
+            <p><a class="ret" href="deexcellencelibrary.html">Download more files here...</a></p>
+            <a href="more.html" style="color:aquamarine; font-weight: bold">*FOR MORE INFO->CLICK HERE...*</a>
+        </div>
+</div>
+
+<footer>
+	<b><a href='help.html' style="color:white">Help</a> | <a href='contact.html' style="color:white">Contact</a> | <a href='login.html' style="color:white">Login</a></b>
+</footer>
+<footer>
+	<b>Powered by</b> <a href="default.html" target="_blank" style="font-size: 20px; color: ghostwhite;">Haweytech</a>
+</footer>
+</body>
+</html>

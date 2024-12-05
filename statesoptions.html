@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Selection Test</title>
+    <link rel="stylesheet" href="spec.css">
+    <style>
+        .tstmy12{
+		background-color:rgb(55, 55, 59);
+		border-radius: 0px  12px 0px 12px;
+		width: 85%;
+		color: #fff;
+		}
+        .menu{
+			display: none;
+		}
+    </style>
+</head>
+<body>
+    <!-- <label for="state">State:</label><br>
+    <input list="states" placeholder="Choose a state" name="state" required>
+    <datalist id="states">
+        <option value="Abia">
+        <option value="Akwa Ibom">
+        <option value="Abuja">
+        <option value="Anambra">
+        <option value="Bayelsa">
+        <option value="Benue">
+        <option value="Borno">
+        <option value="Delta">
+        <option value="Ebonyi">
+        <option value="Edo">
+        <option value="Ekiti">
+        <option value="Enugu">
+        <option value="Gombe">
+        <option value="Imo">
+        <option value="Jigawa">
+        <option value="Kaduna">
+        <option value="Kano">
+        <option value="Katsina">
+        <option value="Kebbi">
+        <option value="Kogi">
+        <option value="Kwara">
+        <option value="Lagos">
+        <option value="Nasarawa">
+        <option value="Niger">
+        <option value="Ogun">
+        <option value="Ondo">
+        <option value="Osun">
+        <option value="Oyo">
+        <option value="Plateau">
+        <option value="Rivers">
+        <option value="Sokoto">
+        <option value="Taraba">
+        <option value="Yobe">
+        <option value="Zamfara">
+    </datalist><br> -->
+    <label for="state">State:</label><br>
+<select name="state" id="state" required>
+    <option value="Abia">Abia</option>
+    <option value="Akwa Ibom">Akwa Ibom</option>
+    <option value="Abuja">Abuja</option>
+    <option value="Anambra">Anambra</option>
+    <option value="Bayelsa">Bayelsa</option>
+    <option value="Benue">Benue</option>
+    <option value="Borno">Borno</option>
+    <option value="Delta">Delta</option>
+    <option value="Ebonyi">Ebonyi</option>
+    <option value="Edo">Edo</option>
+    <option value="Ekiti">Ekiti</option>
+    <option value="Enugu">Enugu</option>
+    <option value="Gombe">Gombe</option>
+    <option value="Imo">Imo</option>
+    <option value="Jigawa">Jigawa</option>
+    <option value="Kaduna">Kaduna</option>
+    <option value="Kano">Kano</option>
+    <option value="Katsina">Katsina</option>
+    <option value="Kebbi">Kebbi</option>
+    <option value="Kogi">Kogi</option>
+    <option value="Kwara">Kwara</option>
+    <option value="Lagos">Lagos</option>
+    <option value="Nasarawa">Nasarawa</option>
+    <option value="Niger">Niger</option>
+    <option value="Ogun">Ogun</option>
+    <option value="Ondo">Ondo</option>
+    <option value="Osun">Osun</option>
+    <option value="Oyo">Oyo</option>
+    <option value="Plateau">Plateau</option>
+    <option value="Rivers">Rivers</option>
+    <option value="Sokoto">Sokoto</option>
+    <option value="Taraba">Taraba</option>
+    <option value="Yobe">Yobe</option>
+    <option value="Zamfara">Zamfara</option>
+</select>
+
+
+
+<div class="dam-container dam-content" id="menu">
+    <!-- <center> -->
+       <b class="dam-center dam-padding-48"><span class="dam-tag dam-wide dam-padding-left dam-padding-right">
+            WEEKLY EVENTS</span></b>
+    <!-- </center> -->
+            <br>
+             <br>
+             <div class="dam-row dam-center dam-card-2 dam-padding">
+                     <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                       <div class="dam-col s6 tablink" style="color:#fff">Birthday Celebrants</div>
+                     </a>
+                     <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                       <div class="dam-col s6 tablink" style="color:#fff">Miscellenious</div>
+                     </a>
+                   </div>
+             
+   
+       <div id="Eat" class="dam-container menu dam-padding-48 dam-card-2">
+         <h3>Babatunde Halmond</h3>
+         <p class="dam-text-grey">Mechanical Dept.<br> Born in 1996,<br> Currently in 300level</p><br>
+       
+         <h3>Joseph Adeola</h3>
+         <p class="dam-text-grey">Dept. of Biochemistry,<br> Born in 1998,<br> Currently in 200level</p><br>
+       
+         <h3>Benedict David</h3>
+         <p class="dam-text-grey">Computer Science Dept.<br> Born in 1995,<br> Currently in 400level</p><br>
+       
+         <h3>Oluwasegun Osamen</h3>
+         <p class="dam-text-grey">Dept. of Biology,<br> Born in 1999,<br> Currently in 300level</p><br>
+       
+         <h3>Mattew Osage</h3>
+         <p class="dam-text-grey">Mat.&Met. Dept.<br> Born in 1997,<br> Currently in 500level</p>
+       </div>
+   
+       <div id="Drinks" class="dam-container menu dam-padding-48 dam-card-2">
+         <h3>Loding...</h3>
+         <p class="dam-text-grey">stay tune</p><br>
+       
+         <h3>Loding...</h3>
+         <p class="dam-text-grey">stay tune</p><br>
+       
+         <h3>Materials</h3>
+         <p class="dam-text-grey">Materials are available for every 100 and 200 level Students.</p><br>
+       
+         <h3>Prayer night</h3>
+         <p class="dam-text-grey">Pls be informed of prayer night coming up on 26/04/2019. God bless you!</p><br>
+       
+         <h3>Seminal! Seminal! Seminal!</h3>
+         <p class="dam-text-grey">This is for everybody, Theme:Technology in day to day activities.<br>
+             Date:4th-6th of May 2019 <br> Venue:SCHOOL Auditorium</p>
+       </div> 
+       <!--<img src="images/fruit.jpg" style="width:100%;max-width:1000px;margin-top:32px;"> -->
+     </div>
+         </div>
+         <br>
+           <script src="https://maps.googleapis.com/maps/api/js"></script>
+   
+   <script>
+   // Google Map Location
+   var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+   
+   function initialize() {
+   var mapProp = {
+     center: myCenter,
+     zoom: 12,
+     scrollwheel: false,
+     draggable: false,
+     mapTypeId: google.maps.MapTypeId.ROADMAP
+     };
+   
+   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+   
+   var marker = new google.maps.Marker({
+     position: myCenter,
+   });
+   
+   marker.setMap(map);
+   }
+   
+   google.maps.event.addDomListener(window, 'load', initialize);
+   
+   // Tabbed Menu
+   function openMenu(evt, menuName) {
+     var i, x, tablinks;
+     x = document.getElementsByClassName("menu");
+     for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablink");
+     for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" dam-light-grey", "");
+     }
+     document.getElementById(menuName).style.display = "block";
+     evt.currentTarget.firstElementChild.className += " dam-light-grey";
+   }
+   document.getElementById("myLink").click();
+   </script>
+</body>
+</html>

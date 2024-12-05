@@ -3,24 +3,6 @@
     overflow: hidden;
     position: relative;
   }
-  /* .example1 h3 {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      line-height: 50px;
-      text-align: center; */
-  
-      /* Starting position *
-         -moz-transform:translateX(100%);
-         -webkit-transform:translateX(100%);	
-         transform:translateX(100%);
-  
-   /* Apply animation to this element *	
-         -moz-animation: example1 15s linear infinite;
-         -webkit-animation: example1 15s linear infinite;
-         animation: example1 15s linear infinite;
-  }*/
   
   /* Move it (define the animation) */
         @-moz-keyframes example1 {
@@ -44,42 +26,6 @@
          }
         }
 
-
-        .marquee {
-            margin: 0 auto;
-            width: 100%;
-            height: 30px;
-            white-space: nowrap;
-            overflow: hidden;
-            box-sizing: border-box;
-            position: relative;
-          }
-          .marquee:before,
-          .marquee:after {
-            position: absolute;
-            top: 0;
-            width: 50px;
-            height: 30px;
-            content: "";
-            z-index: 1;
-          }
-          .marquee:before {
-            left: 0;
-            background: linear-gradient(to right, red 10%, transparent 80%);
-          }
-          .marquee:after {
-            right: 0;
-            background: linear-gradient(to left, red 10%, transparent 80%);
-          }
-          .marquee__content,.two {
-            width: 300%;
-            display: flex;
-            line-height: 30px;
-            animation: marquee 15s linear infinite forwards;
-          }
-          .marquee__content:hover, .two:hover {
-            animation-play-state: paused;
-          }
           .list-inline, .two{
             display: flex;
             justify-content: space-around;
@@ -98,16 +44,23 @@
             }
           }
 
+          .card-container{
+            /* margin-left: 150px; */
+            margin-top:140px;
+            text-align: center;
+            width: 100%;
+          }
           .nut{
               padding:5px;
               border-radius:3px 3px 0px 3px;
               border: 0.5px solid darkgrey;
               /* float: ; */
           }
-          .diplay{
-            padding: 0;
-            float: left;
-            /* margin-left: 55px; */
+          .centra{
+            margin-left: 160px;
+            padding: 10px;
+            text-align: center;
+            width: 85%;
         }
           .margin-bottom{
               margin-bottom: 3px!important;
@@ -144,21 +97,153 @@
           .firstdiet{
             color:green;
             font-family: 'Times New Roman', Times, serif;
-            font-size: 15px;
-            /* margin-left: 40px; */
+            /* font-size: 15px; */
+            /* margin-left: 20px; */
+            text-align: center;
           }
+          .topimg1{
+            width: 20%;
+          }
+          .topimg2{
+            width:25%;
+            margin-top: -116px;
+            margin-right: -38px;
+          }
+          .topimg3{
+            display: none;
+          }
+            .firstbox{
+            width:70%;
+            margin:0px 0px 0px 120px;
+            font-size:20px;
+            border-radius:8px;
+            border: 1px solid black;
+        }
 
-          /* div {
-            width: 300px;
-            height: 50px;
-            position: fixed;
-            inset: 0;
-            margin: auto;
-            animation: animate 10s linear infinite alternate;
-            outline: 1px solid;
+        @media(max-width:600px){
+
+          .card-container{
+            margin-top:80px;
+            width: 100%;
           }
+          .centra{
+            margin-left: 25px;
+            width: 100%;
+        }
+        .nut{
+            display: flex;
+            /* font-size: 18px; */
+            padding: 5px
+        }
+        .bgor{background-color: ghostwhite;height:150px!important;}
+        .firstbox{
+            font-size: 17px;
+            font-weight: bold;
+            width:100%;
+            margin:0px 20px 0px 36px
+        }
+            .nav-top-show{
+            margin-top: 160px;
+            margin-bottom: -200px;
+            /* width:100%;
+            font-size: 12px; */
+        }
+        iframe{
+          width: 100%;
+        }
+        .hdtext{
+                margin-right: 8px;
+                font-size: 12px;
+                padding: 1px 5px 10px 5px;
+            } 
+        
+        #one,#two,#three,#four,#five,#six,#imag,#textredux{
+            
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .topimg1{
+            width: 100%;
+        } 
+        .topimg2{
+          display: none;
+        }
+        .topimg3{
+          display: flex;
+        }
+        .firstdiet{
+          margin: 0;
+        }
+        .tbstruct{
+          width: 100%;
+        }
+        .h3-line{margin-top: 0px;}
+        }
+        body::after{
+            bottom: -600px;
+        }
+        .firstbox{
+          font-size:20px;
+            width:80%;
+            /* margin:0px 0px 0px 30px; */
+            border-radius:8px;
+            border: 1px solid black;
+        }
+        iframe{
+            width: 80%;
+            height: 350px;
+            background-color: rgba(137, 158, 177, 0.685);
+            color: white;
+            border-radius: 10px 2px 10px 2px;
+            border: 1px solid red;
+        }
+        ol{
+            text-align: center;
+            text-decoration:none;
+        }
+        #one,#two,#three,#four,#five,#six,#imag{
+            background-color: rgba(137, 158, 177, 0.767);
+            border-radius: 5px;
+            /* max-width: fit-content; */
+            font-weight: bold;
+        }
+        #one a{text-decoration: none;}
+        #two a{text-decoration: none;}
+        #three a{text-decoration: none;}
+        #four a{text-decoration: none;}
+        #five a{text-decoration: none;}
+        #six a{text-decoration: none;}
+        .tbstruct{width: 85%;}
+        
+        table a:hover{
+            color: ghostwhite;
+            background-color: grey;
+            font-size: 14px;
+            padding: 3px;
+            border-radius: 0 5px 0 5px;
+        }
+        .custom{
+            /* font-size: 20px; */
+            font-style: italic;
+            color: darkred;
+        }
+        .two{
+            color: darkgreen;
+            font-weight: bold;
+        }
+        h2{
+          text-align: center;
+          width:85%;
+          background-color: rgb(137, 158, 177);
+          border-radius: 5px;
+        }
+        .h3-line{margin-top: -10px;}
+        
+        td{
+            table-layout: fixed;
+            display: table-cell;
+            text-align: center;
+            border: 3px solid darkgray;
+            /* width: 100%; */
+        }
           
-          @keyframes animate {
-            0% { outline-width: 1px; }
-            100% { outline-width: 50px; }
-          } */

@@ -10,30 +10,55 @@
     <link rel="stylesheet" href="preserve.css">
     <link rel="stylesheet" href="head.css">
     <style>
+@media screen {
+    .firstbox{
+    width:80%;
+    margin:0px 0px 0px 130px;
+}
+}
 @media(max-width:600px){
+.maque{
+    margin-top: -12px;
+    margin-right: 12px;
+    font-size: 12px;
+    padding: 10px
+}
+.bgor{background-color: ghostwhite;height:150px!important;}
+.firstbox{
+    width:80%;
+    margin:0px 20px 0px 30px
+}
     .nav-top-show{
-    margin-top: 250px;
-    margin-bottom: -230px;
+    margin-top: 160px;
+    margin-bottom: -200px;
     /* width:100%;
     font-size: 12px; */
+}
+.hdtext{
+        margin-right: 8px;
+        font-size: 12px;
+        padding: 1px 5px 10px 5px;
+    } 
+
+#one,#two,#three,#four,#five,#six,#imag,#textredux{
+    
+    font-size: 12px;
+    font-weight: bold;
 }
     .topimg{
     width: 50%;
 } 
+.h3-line{margin-top: 0px;}
 }
 body::after{
     bottom: -600px;
 }
-/* footer{
-    /* position: fixed; 
-    
-} */
-/* html,body{
-    line-height: id="tableimg"2;
-} */
-/* p:nth-child(2){
-    float: right;
-} */
+.firstbox{
+    /* width:80%; */
+    /* margin:0px 0px 0px 30px; */
+    border-radius:8px;
+    border: 1px solid black;
+}
 iframe{
     width: 90%;
     height: 350px;
@@ -49,7 +74,7 @@ ol{
 #one,#two,#three,#four,#five,#six,#imag{
     background-color: rgba(180, 108, 108, 0.541);
     border-radius: 5px;
-    max-width: fit-content;
+    /* max-width: fit-content; */
     font-weight: bold;
 }
 #one a{text-decoration: none;}
@@ -60,10 +85,10 @@ ol{
 #six a{text-decoration: none;}
 .tbstruct{width: 70%;}
 
-a:hover{
+table a:hover{
     color: ghostwhite;
     background-color: grey;
-    font-size: 18px;
+    font-size: 14px;
     padding: 3px;
     border-radius: 0 5px 0 5px;
 }
@@ -80,25 +105,8 @@ h2{
     background-color: rgb(221, 237, 250);
     border-radius: 15px 0px 0 15px;
 }
-.h3-line{margin-top: 0px;}
-/* .marquee {
-    width: px;
-    line-height: 50px;
-    background-color: lightgray;
-    color: black;
-    white-space: nowrap;
-    overflow: hidden;
-    box-sizing:border-box;
-}
-.marquee{
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 10s linear infinite;
-}
-@keyframes marquee {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-} */
+.h3-line{margin-top: -10px;}
+
 td{
     table-layout: fixed;
     display: table-cell;
@@ -172,13 +180,13 @@ td{
 
 
 
-    <div class="marquee" style="margin-top:250px">
+    <div class="marquee" style="margin-top:200px">
     <p  class ="two">HEALTH IS WEALTH...TAKE GOOD CARE OF YOUR HEALTH SO THAT YOU CAN ENJOY YOUR WEALTH!</p>
     </div>
     <center>
         <h1>This page shows the classes of food and their details!</h1>
     </center>
-        <div  style="margin:50px 50px;border-radius:8px;border: 1px solid black;"> 
+        <div class="firstbox"> 
 
             <div class="nut margin-bottom">
                 <div class="boxreduct1">
@@ -241,7 +249,7 @@ td{
                         </tr>
                         <tr>
                                     <td id="two">2</td>&nbsp;
-                                    <td id="two" type="none"><a href="vitamins.html">VITAMINS</a></td>&nbsp;
+                                    <td id="two" type="none"><a href="vitamins1.html">VITAMINS</a></td>&nbsp;
                                     <td id="imag" type="none"><img id="tableimg" src="health/images/fruits.jpg" alt="VITAMINS"></td>&nbsp;
                         </tr>
                         <tr>
@@ -268,13 +276,13 @@ td{
                             </tbody>
                         </table>
                         <br>
-                            <p>To check your health status, supply your food intake profile by creating an account below!</p>
-                            <i>Already have an account? 
+                            <p id="textredux">To check your health status, supply your food intake profile by creating an account below!</p>
+                            <i id="textredux">Already have an account? 
                                 <a href="healthlogin.html" style="text-decoration: none;font-weight: bold;">
                                     Login here..
                                 </a>
                             </i><br>
-                            <b>Create account <a href="healthnewuser.html">Here..</a></b>
+                            <b id="textredux">Create account <a href="healthnewuser.html">Here..</a></b>
                         <br>
                         <br>
                             <strong>
@@ -283,9 +291,8 @@ td{
                             </strong>
                         <footer style="height:60px;background-color:rgba(100, 94, 94, 0.562);">
                      <strong class="fame">
-                    Courtesy:<br>
-                    Haweytech Unlimited<br>
-                    Technologies for better World(Nigeria CHAPTER)
+                    <!-- Haweytech Unlimited<br> -->
+                    Technologies for better World!
             </strong>
                 <b>Powered by 
             <a href="default.html" target="_blank" style="font-size:20px;

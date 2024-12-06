@@ -9,20 +9,74 @@
     <link rel="stylesheet" href="newcss.css">
     <link rel="stylesheet" href="dexlib.css">
     <style>
+
+.h3-toup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ensure the header spans the entire viewport width */
+    z-index: 1000; /* Keeps the header above other elements */
+    background-color: rgb(230, 252, 252); /* Matches the current color scheme */
+    border-bottom: 1px solid red;
+    box-sizing: border-box;
+}
+
+#headlogo {
+    width: auto;
+    max-width: 100px; /* Adjust for smaller screens */
+    height: auto;
+    display: block;
+    margin:0 auto; /* Centers the logo */
+    padding: 5px; /* Adds spacing around the logo */
+}
+
+.maquue {
+    font-weight: bold;
+    font-size: 15px;
+    color: #960014;
+    margin: 10px auto;
+    text-align: center;
+    display: block; /* Ensures it stays centered */
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+    .h3-toup {
+        padding: 10px; /* Adds padding to avoid content squeezing */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for aesthetics */
+    }
+
+    #headlogo {
+        max-width: 90px; /* Adjust logo size for smaller screens */
+        margin-top: -25px; /* Reduce top margin */
+    }
+
+    .maquue {
+        margin: 0;
+        font-size: 12px; /* Reduce font size for mobile readability */
+    }
+    .firstp{
+        font-size: 10px;
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
         body, html {
 		margin: 0;
 		padding: 0;
-		/* font-family: Arial, sans-serif; */
 		overflow-x: hidden;
 	}
-    .h3-toup {
+    /* .h3-toup {
     position: fixed;
-    width: 100%;
-    z-index: 1;
-    }
-    .h3-toup {
+    /* width: 100%;
+    z-index: 1; *
+    } */
+    /* .h3-toup {
     top: 0;
-    }
+    } */
     .nav-top-show{
         background-color: darkgray;
     }
@@ -33,10 +87,12 @@
     }
     .hdtext{
         /* margin-right: 0; */
+        max-width: 30%;
         float: right;
         color: rgb(10, 45, 110);
+        font-size: 12px;
     }
-    .maquue {
+    /* .maquue {
     font-weight: bold;
     font-size: 15px;
     font-family: "Times New Roman", Times, serif;
@@ -45,7 +101,7 @@
     margin-top: -27px;
     text-align: center;
     float: right;
-    }
+    } */
     .dexlib9 {
     background: url("technologies/tech11.webp");
     color: black;
@@ -135,7 +191,7 @@
     margin:0px 0px 0px 130px;
     }
     .firstp{font-size: 14px;}
-    #headlogo{margin-top: -38px;width: 120px}
+    /* #headlogo{margin-top: -38px;width: 120px} */
     .h3-contactsect{margin-left:0px}
     .h3-twothird1{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.22),
@@ -196,24 +252,24 @@
         body::after{
             bottom: -2000px;
     }  
-    .h3-toup{
+    /* .h3-toup{
         background-color: f9f9f9;
-    }
+    } */
     .imgi{width: 200px;}
     p.h3-differ:nth-child(1){
     background-color:whitesmoke;
     color:darkgray;
     }
-    .maquue{
+    /* .maquue{
         margin-top: -19px;
         margin-right: 12px;
         font-size: 12px;
         padding: 10px
-    }
+    } */
     .hdtext{
         display: none;
     } 
-    #headlogo{max-width: 100px;margin-top: -30px;margin-left: -6px}
+    /* #headlogo{max-width: 100px;margin-top: -30px;margin-left: -6px} */
     .h3-contactsect{margin-left:20px;font-size: 14px}
     .line1{width: 100%}
     .line2{width: 90%}
@@ -252,9 +308,9 @@
         border-radius: 4px;
         font-size: 12px;
     }
-    .h3-main1{
-        margin-top: 90px;
-    }
+    /* .h3-main1{
+        margin-top: 400px;
+    } */
        
     .h3-twothird1{
         width: 100%;
@@ -278,24 +334,21 @@
 </head>
 <body>
      
-    <header class="h3-toup top-color">
-        <!-- <div class="bgor"> -->
-        <img id="headlogo" src="reallogo.png" alt="myLOGO">     
-            <p class="firstp">Always Envisioning <b>EXCELLENCE</b>
-                <br>
+        <header class="h3-toup top-color">
+            <a href="deexcellence.html">
+                <img id="headlogo" src="reallogo.png" alt="De'Excellence Logo">
+            </a>
+            <p class="firstp">
+                Always Envisioning <i>EXCELLENCE</i><br>
                 <i>(So as to Build Excellent Futures!)</i>
             </p>
-                    <pre class="hdtext">
-            Building an Excellent mind-sets
-            of Futuristic Children and
-            Continously Improving on them so as
-            to form a Cluster of EXCELLENCE...!
-                </pre> 
-                <b class="maquue">...Building an Excellent Society for the Advancement & Development of All...!</b>
-                
-                <!-- <hr class="h3-line"> -->
-            <!-- </div> -->
+            <h4 class="hdtext">
+                Building an Excellent mind-sets of Futuristic Children and
+                Continuously Improving on them so as to form a Cluster of EXCELLENCE...!
+            </h4>
+            <b class="maquue">...Building an Excellent Society for the Advancement & Development of All...!</b>
         </header>
+        
     
         <div id="demo" class="h3-hide h3-hide-large h3-hide-medium nav-top-show">
             <ul class="h3-navbar">
@@ -322,7 +375,7 @@
 <!-- This is the main body of the page -->
     <!-- !PAGE CONTENT! -->
     
-<div class="h3-main1 h3-content h3-padding" style="max-width:90%;margin-top:200px;">
+<div class="h3-main1 h3-content h3-padding" style="margin-top:200px;">
     <h3 class="h3-scool">De'Excellence e-Library Page</h3>
     <!-- First Photo Grid-->
     <div class="bottom-gap h3-row-padding h3-padding-16 h3-center" id="food">
@@ -339,7 +392,7 @@
         </b>
         </div>
         <h3>Excellency of Wisdom by David Oyedepo</h3>
-        <p>We provide Technology-base environment for your ward(s) to study.</p>
+        <p>We provide Technology-base environment for your ward(s).</p>
       </div>
 
       <div class="h3-quarter">
@@ -407,7 +460,7 @@
                 </b>
             
             </div>
-            <h3>A+ Certification Bible for IT skills</h3>
+            <h3>A+ Certification Bible for IT skills at any level!</h3>
             <p>Diving into the World of Information and Technology!</p>
           </div>
 
@@ -476,7 +529,7 @@
                 </b>
             
             </div>
-            <h3>A+ Certification Bible for IT skills</h3>
+            <h3>A+ Certification Bible for IT skills at any level</h3>
             <p>Diving into the World of Information and Technology!</p>
           </div>
 
@@ -597,7 +650,7 @@
                         Sound Education is the BEDROCK!
                     <br>
                     <b>Powered by: 
-                        <a href="default.html" target="_blank" style="
+                        <a href="default.html"  style="
                                 color:indigo;">Haweytech
                         </a>
                     </b>

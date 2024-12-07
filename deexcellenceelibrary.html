@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De'excellenceschl.com/eLibrary</title>
+    <link rel="stylesheet" href="preserve.css">
+    <link rel="stylesheet" href="newcss.css">
+    <link rel="stylesheet" href="dexlib.css">
+    <style>
+
+.h3-toup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ensure the header spans the entire viewport width */
+    z-index: 1000; /* Keeps the header above other elements */
+    background-color: rgb(230, 252, 252); /* Matches the current color scheme */
+    border-bottom: 1px solid red;
+    box-sizing: border-box;
+}
+
+#headlogo {
+    width: auto;
+    max-width: 100px; /* Adjust for smaller screens */
+    height: auto;
+    display: block;
+    margin:0 auto; /* Centers the logo */
+    padding: 5px; /* Adds spacing around the logo */
+}
+
+.maquue {
+    font-weight: bold;
+    font-size: 15px;
+    color: #960014;
+    margin: 10px auto;
+    text-align: center;
+    display: block; /* Ensures it stays centered */
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+    .h3-toup {
+        padding: 10px; /* Adds padding to avoid content squeezing */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for aesthetics */
+    }
+
+    #headlogo {
+        max-width: 90px; /* Adjust logo size for smaller screens */
+        margin-top: -25px; /* Reduce top margin */
+    }
+
+    .maquue {
+        margin: 0;
+        font-size: 12px; /* Reduce font size for mobile readability */
+    }
+    .firstp{
+        font-size: 10px;
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+        body, html {
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+    /* .h3-toup {
+    position: fixed;
+    /* width: 100%;
+    z-index: 1; *
+    } */
+    /* .h3-toup {
+    top: 0;
+    } */
+    .nav-top-show{
+        background-color: darkgray;
+    }
+    .top-color{
+        background-color: rgb(230, 252, 252);
+        border-bottom: 1px solid red;
+        height:auto!important;
+    }
+    .hdtext{
+        /* margin-right: 0; */
+        max-width: 30%;
+        float: right;
+        color: rgb(10, 45, 110);
+        font-size: 12px;
+    }
+    /* .maquue {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    background-color: none;
+    color: #960014;
+    margin-top: -27px;
+    text-align: center;
+    float: right;
+    } */
+    .dexlib9 {
+    background: url("technologies/tech11.webp");
+    color: black;
+  }
+  .dexlib10 {
+    background: url("technologies/tech7.webp");
+    color: black;
+  }
+  .dexlib11 {
+    background: url("technologies/tech9.webp");
+    color: black;
+  }
+  .dexlib12 {
+    background: url("technologies/tech8.webp");
+    color: black;
+  }
+    
+    .h3-third1{
+        float:left;
+        width:100%
+    }
+    .formore{
+        margin-left:10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .formore a {
+        text-decoration: none;
+    }
+    .dexbld {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    display:inline-block;
+    background-color: rgba(181, 247, 232, 0.87);
+    font-weight: bold;
+    border-radius: 5px;
+    /* padding: 2px; */
+    margin-right: 15px;
+    border-bottom: 4px solid brown;
+    }
+    .dexbld a {
+    text-decoration: none;
+    color:rgba(32, 0, 0, 0.719);
+    }
+    .dexbld:hover{
+        background-color: antiquewhite;
+        color: darkred;
+        /* font-weight: 700; */
+        padding: 3px;
+    }
+    .dexlib1 i,.dexlib2 i,.dexlib3 i,.dexlib4 i,
+    .dexlib5 i,.dexlib6 i,.dexlib7 i,.dexlib8 i,
+    .dexlib9 i,.dexlib10 i,.dexlib11 i,.dexlib12 i{
+    background-color: rgb(90, 90, 84);
+    color:rgb(65, 241, 65);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    }
+    .h3-quarter{
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(36, 53, 53);
+    }
+    .h3-quarter h3{
+    line-height: 18px;
+    font-size: 15px;
+    }
+    .h3-quarter p{
+    line-height: 18px;
+    margin-top: -10px;
+    margin-bottom: 4px;
+    }
+    
+    .bottom-gap{
+    margin-bottom: 25px;
+    }
+
+    @media screen {
+        body::after{
+         bottom: -700px;
+    }
+    .imgi{width: 280px;}
+    .firstbox{
+    width:80%;
+    margin:0px 0px 0px 130px;
+    }
+    .firstp{font-size: 14px;}
+    /* #headlogo{margin-top: -38px;width: 120px} */
+    .h3-contactsect{margin-left:0px}
+    .h3-twothird1{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.22),
+    0 18px 45px 0 rgba(0,0,0,0.21)!important;
+    }
+    .h3-scool{
+    color: rgb(36, 13, 58);
+    font-weight: bold;
+    font-size: 30px;
+    font-family: cursive;
+    margin-bottom:40px;
+    text-align: center;
+    text-shadow:2px 5px 6px rgba(107, 5, 5, 0.904);
+    }
+    .nomargin{
+    color:rgb(0, 130, 130);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    }
+    .h3-dropdown1 {
+
+    display: inline-block;
+    position: relative;
+
+    }
+    .h3-dropdown-content1 {
+    margin-top: 6px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    font-weight: bold;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    }
+    .h3-dropdown1:hover .h3-dropdown-content1 {
+    display: block;
+
+    }
+    .h3-dropdown-content1 a {
+
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+
+    }
+    .h3-dropdown-content1 a:hover {
+
+    color: #FFFFFF;
+    background-color:rgb(5, 5, 63);
+
+    }
+    }
+        @media (max-width:600px){
+        body::after{
+            bottom: -2000px;
+    }  
+    /* .h3-toup{
+        background-color: f9f9f9;
+    } */
+    .imgi{width: 200px;}
+    p.h3-differ:nth-child(1){
+    background-color:whitesmoke;
+    color:darkgray;
+    }
+    /* .maquue{
+        margin-top: -19px;
+        margin-right: 12px;
+        font-size: 12px;
+        padding: 10px
+    } */
+    .hdtext{
+        display: none;
+    } 
+    /* #headlogo{max-width: 100px;margin-top: -30px;margin-left: -6px} */
+    .h3-contactsect{margin-left:20px;font-size: 14px}
+    .line1{width: 100%}
+    .line2{width: 90%}
+    .h3-scool{
+    color: rgb(35, 10, 58);
+    font-weight: bold;
+    font-size: 25px;
+    font-family: cursive;
+    margin-bottom:20px;
+    text-align: center;
+    text-shadow:2px 5px 6px rgba(126, 6, 6, 0.952);
+    }
+    .nomargin{
+        width: 100%;
+        margin-top: 30px;
+        float: none;
+    }
+    .marg-bal{
+        margin: auto !important;
+    }
+    .formore{
+        margin-left:10px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .h3-bold{
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    .nav-top-show{
+        margin-top: 160px;
+        margin-bottom: -200px;
+        width:100%;
+        padding: 3px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    /* .h3-main1{
+        margin-top: 400px;
+    } */
+       
+    .h3-twothird1{
+        width: 100%;
+        text-align: center;
+        background-color:rgba(250, 250, 210, 0.692);
+        margin-left:10px;
+        padding: 1px;
+        border-radius: 5px;
+    } 
+    .h3-line{margin-top: 0;}
+
+    header .firstp > i {
+    display:contents !important;
+  }
+  .h3-quarter{
+    margin-bottom: 22px;
+    }
+    }
+    
+    </style>
+</head>
+<body>
+     
+        <header class="h3-toup top-color">
+            <a href="deexcellence.html">
+                <img id="headlogo" src="reallogo.png" alt="De'Excellence Logo">
+            </a>
+            <p class="firstp">
+                Always envisioning Excellence<br>
+                <i>(to Build Excellent Futures!)</i>
+            </p>
+            <h4 class="hdtext">
+                Building an Excellent mind-sets of Futuristic Children and
+                Continuously Improving on them so as to form a Cluster of EXCELLENCE...!
+            </h4>
+            <b class="maquue">...Building an Excellent Society for the Advancement & Development of All...!</b>
+        </header>
+        
+    
+        <div id="demo" class="h3-hide h3-hide-large h3-hide-medium nav-top-show">
+            <ul class="h3-navbar">
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">CONTACTS</a></li>
+            <li><a href="#">OUR PROGRAMS</a></li>
+            <li><a href="#">FAQS</a></li>
+            <li><a href="#">TUTORIALS</a></li>
+            <li><a href="deexcellenceREGpage.html">REGISTRATIONS</a></li>
+            <li><a href="deexcellenceREGpage.html">USER LOGIN</a></li>
+        </ul>
+        </div>
+            <script>
+                function myFunction() {
+                        var x = document.getElementById("demo");
+                        if (x.className.indexOf("h3-show") == -1) {
+                            x.className += " h3-show";
+                        } else { 
+                            x.className = x.className.replace(" h3-show", "");
+                        }
+                }
+            </script>
+                
+<!-- This is the main body of the page -->
+    <!-- !PAGE CONTENT! -->
+    
+<div class="h3-main1 h3-content h3-padding" style="margin-top:200px;">
+    <h3 class="h3-scool">De'Excellence e-Library Page</h3>
+    <!-- First Photo Grid-->
+    <div class="bottom-gap h3-row-padding h3-padding-16 h3-center" id="food">
+
+      <div class="h3-quarter">
+        <div class="dexlib1" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+        <b class="dexbld">
+            <a href="pdfs/EXCELLENCY OF WISDOM BY DAVID OYEDEPO.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+        </b>
+        <b class="dexbld">
+            <a href="pdfs/EXCELLENCY OF WISDOM BY DAVID OYEDEPO.pdf" target="_blank">READ</a>
+        </b>
+        </div>
+        <h3>Excellency of Wisdom by David Oyedepo</h3>
+        <p>We provide Technology-base environment for your ward(s).</p>
+      </div>
+
+      <div class="h3-quarter">
+        <div class="dexlib2" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+            <b class="dexbld">
+                <a href="Printers - types, working and uses.ppt" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+            </b>
+            <b class="dexbld">
+                <a href="pdfs/Printers - types, working and uses.ppt" target="_blank">READ</a>
+            </b>
+        
+        </div>
+        <h3>Printers - Types, Working and Uses</h3>
+        <p>We provide Technology-base Materials for IT Studies</p>
+      </div>
+
+      <div class="h3-quarter">
+        <div class="dexlib3" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+            <b class="dexbld">
+                <a href="pdfs/9781455517336.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+            </b>
+            <b class="dexbld">
+                <a href="pdfs/9781455517336.pdf" target="_blank">READ</a>
+            </b>
+        
+        </div>
+        <h3>The Power of Being Thankful by Joyce Meyer</h3>
+        <p>Discovering the Strength of Gratitude</p>
+      </div>
+
+      <div class="h3-quarter">
+        <div class="dexlib4" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+            <b class="dexbld">
+                <a href="pdfs/Bringing Out the Best in Your H - H. Norman Wright.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+            </b>
+            <b class="dexbld">
+                <a href="pdfs/Bringing Out the Best in Your H - H. Norman Wright.pdf" target="_blank">READ</a>
+            </b>
+        
+        </div>
+        <h3>Bringing Out the Best in Your H - H. Norman Wright</h3>
+        <p>Book on building your Youghtful Potentials</p>
+      </div>
+
+    </div>
+    
+    <!-- Second Photo Grid-->
+    <div class="h3-row-padding h3-padding-16 h3-center" style="margin-top: 50px;">
+
+        <div class="h3-quarter">
+            <div class="dexlib5" style="text-align: center;">
+                <i>Available</i>
+                <br><br><br><br><br><br><br>
+                <b class="dexbld">
+                    <a href="pdfs/A+ Certification Bible.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+                </b>
+                <b class="dexbld">
+                    <a href="pdfs/A+ Certification Bible.pdf" target="_blank">READ</a>
+                </b>
+            
+            </div>
+            <h3>A+ Certification Bible for IT skills at any level!</h3>
+            <p>Diving into the World of Information and Technology!</p>
+          </div>
+
+      <div class="h3-quarter">
+        <div class="dexlib6" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+            <b class="dexbld">
+                <a href="pdfs/Windows Registry Tips and Tweaks - LectureNote.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+            </b>
+            <b class="dexbld">
+                <a href="pdfs/Windows Registry Tips and Tweaks - LectureNote.pdf" target="_blank">READ</a>
+            </b>
+        
+        </div>
+        <h3>Windows Registry Tips and Tweaks - LectureNote</h3>
+        <p>Learning the INs and OUTs of Windows OS</p>
+      </div>
+
+      <div class="h3-quarter">
+        <div class="dexlib7" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+            <b class="dexbld">
+                <a href="pdfs/wake-up and change.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+            </b>
+            <b class="dexbld">
+                <a href="pdfs/wake-up and change.pdf" target="_blank">READ</a>
+            </b>
+        
+        </div>
+        <h3>WAKE-UP and CHANGE BY the Author</h3>
+        <p>Study to change your HABIT as a young person</p>
+      </div>
+
+      <div class="h3-quarter">
+        <div class="dexlib8" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+            <b class="dexbld">
+                <a href="pdfs/The Power of the Tongue.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+            </b>
+            <b class="dexbld">
+                <a href="pdfs/The Power of the Tongue.pdf" target="_blank">READ</a>
+            </b>
+        
+        </div>
+        <h3>The Power of the Tongue</h3>
+        <p>Becoming a great person by inculcatint the good habit of Taming your TONGUE!</p>
+      </div>
+
+    </div>
+
+    <!-- Third Photo Grid-->
+    <div class="h3-row-padding h3-padding-16 h3-center" style="margin-top: 50px;">
+
+        <div class="h3-quarter">
+            <div class="dexlib9" style="text-align: center;">
+                <i>Available</i>
+                <br><br><br><br><br><br><br>
+                <b class="dexbld">
+                    <a href="pdfs/A+ Certification Bible.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+                </b>
+                <b class="dexbld">
+                    <a href="pdfs/A+ Certification Bible.pdf" target="_blank">READ</a>
+                </b>
+            
+            </div>
+            <h3>A+ Certification Bible for IT skills at any level</h3>
+            <p>Diving into the World of Information and Technology!</p>
+          </div>
+
+      <div class="h3-quarter">
+        <div class="dexlib10" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+            <b class="dexbld">
+                <a href="pdfs/Windows Registry Tips and Tweaks - LectureNote.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+            </b>
+            <b class="dexbld">
+                <a href="pdfs/Windows Registry Tips and Tweaks - LectureNote.pdf" target="_blank">READ</a>
+            </b>
+        
+        </div>
+        <h3>Windows Registry Tips and Tweaks - LectureNote</h3>
+        <p>Learning the INs and OUTs of Windows OS</p>
+      </div>
+
+      <div class="h3-quarter">
+        <div class="dexlib11" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+            <b class="dexbld">
+                <a href="pdfs/wake-up and change.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+            </b>
+            <b class="dexbld">
+                <a href="pdfs/wake-up and change.pdf" target="_blank">READ</a>
+            </b>
+        
+        </div>
+        <h3>WAKE-UP and CHANGE BY the Author</h3>
+        <p>Study to change your HABIT as a young person</p>
+      </div>
+
+      <div class="h3-quarter">
+        <div class="dexlib12" style="text-align: center;">
+            <i>Available</i>
+            <br><br><br><br><br><br><br>
+            <b class="dexbld">
+                <a href="pdfs/The Power of the Tongue.pdf" download onclick="return confirm('Do you want to download this book?')">DOWNLOAD</a>
+            </b>
+            <b class="dexbld">
+                <a href="pdfs/The Power of the Tongue.pdf" target="_blank">READ</a>
+            </b>
+        
+        </div>
+        <h3>The Power of the Tongue</h3>
+        <p>Becoming a great person by inculcatint the good habit of Taming your TONGUE!</p>
+      </div>
+
+    </div>
+</div>
+
+</div>
+  
+    <!-- Pagination -->
+    <div class="h3-center h3-padding-32">
+      <ul class="h3-pagination">
+        <li><a class="h3-black" href="#">1</a></li>
+        <li><a class="h3-hover-black" href="welcomepage2.html">2</a></li>
+        <li><a class="h3-hover-black" href="#">3</a></li>
+        <li><a class="h3-hover-black" href="#">4</a></li>
+        <li><a class="h3-hover-black" href="#">»</a></li>
+      </ul>
+    </div>
+    
+    <!-- <hr id="about"> -->
+    <hr class="line1" width="55%">
+
+        <!-- This is for Pagination directories -->
+    <div class="formore">
+        <h5>Need Video Tutorials...?
+            <a href="tutorialvideos.html">Check here >></a>
+        </h5>
+    </div>
+        
+    <hr class="line2" width="50%">
+    <br><br>
+            <!-- Contact Section -->
+         <div class="marg-bal h3-contactsect h3-container h3-padding-large h3-grey">
+            <h4 id="contact"><b>Contact Me</b></h4>
+            <div class="h3-row-padding h3-center h3-padding-24" style="margin:0 -16px">
+            <div class="h3-third h3-dark-grey">
+                <p><i class="fa fa-envelope h3-xxlarge h3-text-light-grey"></i></p>
+                <p>deexcellencesch@gmail.com</p>
+            </div>
+            <div class="h3-third h3-teal">
+                <p><i class="fa fa-map-marker h3-xxlarge h3-text-light-grey"></i></p>
+                <p>Ikire Osun State,Nigeria</p>
+            </div>
+            <div class="h3-third h3-dark-grey">
+                <p><i class="fa fa-phone h3-xxlarge h3-text-light-grey"></i></p>
+                <p>07067490145,08075016045</p>
+            </div>
+            </div>
+            <hr class="h3-opacity">
+            <form action="http://www.h3schools.com/h3css/form.asp" target="_blank">
+            <div class="h3-group">
+                <label>Name</label>
+                <input class="h3-input h3-border" type="text" name="Name" required>
+            </div>
+            <div class="h3-group">
+                <label>Email</label>
+                <input class="h3-input h3-border" type="text" name="Email" required>
+            </div>
+            <div class="h3-group">
+                <label>Message</label>
+                <input class="h3-input h3-border" type="text" name="Message" required>
+            </div>
+            <button type="submit" class="h3-btn h3-padding-large h3-margin-bottom"><i class="fa fa-paper-plane h3-margin-right"></i>Send Message</button>
+            </form>
+        </div>
+    <!-- footer section -->
+        <footer >
+            <div class="nomargin">
+                    <b>
+                        Sound Education is the BEDROCK!
+                    <br>
+                    <b>Powered by: 
+                        <a href="default.html"  style="
+                                color:indigo;">Haweytech
+                        </a>
+                    </b>
+            </div>
+    </footer>
+        <!-- </div> -->
+    </body>
+</html>

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="preserve.css">
     <link rel="stylesheet" href="newcss.css">
     <link rel="stylesheet" href="dexlib.css">
+    <link rel="stylesheet" href="Css/css/all.css">
+    <link rel="shortcut icon" type="image/png" sizes="80x80" href="newreallogo2.ico">
+    <!-- <link rel="stylesheet" href="head.css" /> -->
     <style>
 
 .h3-toup {
@@ -62,27 +65,18 @@
     }
 }
 
-
-
-        body, html {
+    body, html {
 		margin: 0;
 		padding: 0;
 		overflow-x: hidden;
 	}
-    /* .h3-toup {
-    position: fixed;
-    /* width: 100%;
-    z-index: 1; *
-    } */
-    /* .h3-toup {
-    top: 0;
-    } */
+    
     .nav-top-show{
         background-color: darkgray;
     }
     .top-color{
-        background-color: rgb(230, 252, 252);
-        border-bottom: 1px solid red;
+        background-color: #f8f8ff;
+        border-bottom: 1px solid #96001436;
         height:auto!important;
     }
     .hdtext{
@@ -176,10 +170,98 @@
     margin-top: -10px;
     margin-bottom: 4px;
     }
-    
+    .mainbox-1 {
+    transition: margin-left 0.4s;
+    /* max-width:980px; */
+    margin: auto;
+    }
+    .h3-contactsect-about1{
+    background-color: #f8f8ff;
+    border-radius:8px;
+    max-width:100%;
+    /* margin-left:90px; */
+    padding:25px 200px;
+    }
+    .h3-contactsect-about1 h4{
+    color: #960014;
+    font-size: 25px;
+    .h3-contactsect-about1 h1{
+        color: #960014;
+    }
+    }
+    .h3-contactsect-about1:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    /* New form CSS start*/
+
+    .mainbox-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .mainbox-1 form {
+            width: 100%;
+        }
+
+        .mainbox-1 label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .mainbox-1 input, .mainbox-1 textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .mainbox-1 button {
+            width: 100%;
+            padding: 10px;
+            background-color:#7e7b7b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .mainbox-1 button:hover {
+            background-color: rgba(21, 20, 27, 0.533);
+        }
+
+    /* New form CSS closed */
     .bottom-gap{
     margin-bottom: 25px;
     }
+    .myform label {
+  color: #960014;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.h3-inputnew {
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #96001498;
+  width: 100%;
+}
 
     @media screen {
         body::after{
@@ -198,13 +280,13 @@
     0 18px 45px 0 rgba(0,0,0,0.21)!important;
     }
     .h3-scool{
-    color: rgb(36, 13, 58);
+    color: rgba(36, 13, 58, 0.733);
     font-weight: bold;
     font-size: 30px;
     font-family: cursive;
     margin-bottom:40px;
     text-align: center;
-    text-shadow:2px 5px 6px rgba(107, 5, 5, 0.904);
+    /* text-shadow:2px 5px 6px rgba(107, 5, 5, 0.904); */
     }
     .nomargin{
     color:rgb(0, 130, 130);
@@ -252,20 +334,19 @@
         body::after{
             bottom: -2000px;
     }  
-    /* .h3-toup{
-        background-color: f9f9f9;
-    } */
+    
     .imgi{width: 200px;}
     p.h3-differ:nth-child(1){
     background-color:whitesmoke;
     color:darkgray;
     }
-    /* .maquue{
-        margin-top: -19px;
-        margin-right: 12px;
-        font-size: 12px;
-        padding: 10px
-    } */
+    .h3-contactsect-about1{
+        padding: 12px 25px;
+    }
+    .mainbox-1{
+        margin: 0;
+        width: 100%;
+    }
     .hdtext{
         display: none;
     } 
@@ -349,28 +430,6 @@
             <b class="maquue">...Building an Excellent Society for the Advancement & Development of All...!</b>
         </header>
         
-    
-        <div id="demo" class="h3-hide h3-hide-large h3-hide-medium nav-top-show">
-            <ul class="h3-navbar">
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">CONTACTS</a></li>
-            <li><a href="#">OUR PROGRAMS</a></li>
-            <li><a href="#">FAQS</a></li>
-            <li><a href="#">TUTORIALS</a></li>
-            <li><a href="deexcellenceREGpage.html">REGISTRATIONS</a></li>
-            <li><a href="deexcellenceREGpage.html">USER LOGIN</a></li>
-        </ul>
-        </div>
-            <script>
-                function myFunction() {
-                        var x = document.getElementById("demo");
-                        if (x.className.indexOf("h3-show") == -1) {
-                            x.className += " h3-show";
-                        } else { 
-                            x.className = x.className.replace(" h3-show", "");
-                        }
-                }
-            </script>
                 
 <!-- This is the main body of the page -->
     <!-- !PAGE CONTENT! -->
@@ -610,39 +669,55 @@
     <hr class="line2" width="50%">
     <br><br>
             <!-- Contact Section -->
-         <div class="marg-bal h3-contactsect h3-container h3-padding-large h3-grey">
-            <h4 id="contact"><b>Contact Me</b></h4>
-            <div class="h3-row-padding h3-center h3-padding-24" style="margin:0 -16px">
-            <div class="h3-third h3-dark-grey">
-                <p><i class="fa fa-envelope h3-xxlarge h3-text-light-grey"></i></p>
-                <p>deexcellencesch@gmail.com</p>
-            </div>
-            <div class="h3-third h3-teal">
-                <p><i class="fa fa-map-marker h3-xxlarge h3-text-light-grey"></i></p>
-                <p>Ikire Osun State,Nigeria</p>
-            </div>
-            <div class="h3-third h3-dark-grey">
-                <p><i class="fa fa-phone h3-xxlarge h3-text-light-grey"></i></p>
-                <p>07067490145,08075016045</p>
-            </div>
-            </div>
-            <hr class="h3-opacity">
-            <form action="http://www.h3schools.com/h3css/form.asp" target="_blank">
-            <div class="h3-group">
-                <label>Name</label>
-                <input class="h3-input h3-border" type="text" name="Name" required>
-            </div>
-            <div class="h3-group">
-                <label>Email</label>
-                <input class="h3-input h3-border" type="text" name="Email" required>
-            </div>
-            <div class="h3-group">
-                <label>Message</label>
-                <input class="h3-input h3-border" type="text" name="Message" required>
-            </div>
-            <button type="submit" class="h3-btn h3-padding-large h3-margin-bottom"><i class="fa fa-paper-plane h3-margin-right"></i>Send Message</button>
-            </form>
+     <div class="h3-contactsect-about1">
+        <h4 id="contact"><b>Contact Me</b></h4>
+        <div class="h3-row-padding h3-center h3-padding-24" style="margin:0 -16px;">
+        <div class="h3-third h3-dark-grey round-border1">
+            <p><i class="fa fa-envelope h3-xxlarge h3-text-light-grey"></i></p>
+            <p>deexcellencesch@gmail.com</p>
         </div>
+        <div class="h3-third h3-teal-middle round-border2">
+            <p><i class="fa fa-map-marker h3-xxlarge h3-text-light-grey"></i></p>
+            <p>Sagba Compound Oluofinrin Ikire, Osun State,Nigeria</p>
+        </div>
+        <div class="h3-third h3-dark-grey round-border3">
+            <p><i class="fa fa-phone h3-xxlarge h3-text-light-grey"></i></p>
+            <p>07067490145,08075016045</p>
+        </div>
+        </div>
+        <hr class="h3-opacity">
+        
+
+                          <!-- Form Section -->
+                <div class="mainbox-1 myform">
+                    <p class="income">How to get in touch with us ASAP:</p>
+                    <!-- <form action="send_email.php" target="_blank"> -->
+                    <form action="mailto:dammyhaweydamola@gmail.com" target="_blank"></form>
+                        <label for="name">Name:</label>
+                        <input class="h3-group1 h3-inputnew" type="text" name="name" id="name" placeholder="Name" required>
+                        <label for="email">Email:</label>
+                        <input class="h3-group1 h3-inputnew" type="email" name="email" id="email" placeholder="Email" required>
+                        <label for="phone">Phone number:</label>
+                        <input class="h3-group1 h3-inputnew" type="phone" name="phone" id="phone" placeholder="Phone number" required>
+                        <label for="comment">Comment:</label>
+                        <textarea class="h3-group1 h3-inputnew" name="viewport" id="message" placeholder="Leave your comment here..." rows="5" required></textarea>
+                        <button type="submit" class="h3-btn1">SUBMIT</button>
+                    </form>
+
+                    <!-- Social Media Links -->
+                    <div class="container1">
+                        <h3 style="text-align: center;">Below are our Social media handles.</h3>
+                        <div class="social-btn2">
+                            <a class="s1" href="https://www.twitter.com/@DammyHawey" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            <a class="s1" href="https://www.facebook.com/m.damolaawole" target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <a class="s1" href="https://www.linkedin.com/in/dammyhawey" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                            <a class="s2" href="https://www.youtube.com/DammyHawey" target="_blank"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+                            <a class="s3" href="https://wa.me/+2347067490145" target="_blank"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+    </div>
     <!-- footer section -->
         <footer >
             <div class="nomargin">

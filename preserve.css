@@ -14,6 +14,9 @@ html {
 /* html,body{line-height:1.5}
 html{box-sizing:border-box;overflow-x:hidden}body{margin: 0} */
 @media (max-width: 600px) {
+  .social-btn, .social-btn2{
+    font-size: 20px;
+  }
   .maque {
     margin-top: 150px;
     margin-bottom: 0;
@@ -33,13 +36,33 @@ html{box-sizing:border-box;overflow-x:hidden}body{margin: 0} */
   .h3-main {
     width: 100%;
   }
-  /* .bgor{
-        background-color: ghostwhite;
-        /* height:100px!important; 
-    } */
-  /* .topimg{
-        max-width: 50%;
-    }  */
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-float:hover {
+    background-color: #1EBE5B;
+}
+
   .logimg {
     width: 100%;
   }
@@ -51,6 +74,7 @@ html{box-sizing:border-box;overflow-x:hidden}body{margin: 0} */
     margin-left:0;
     width: 100%;
   }
+
   .h3-contactsect-about{
     width:100%;
     margin-left:0;
@@ -81,7 +105,7 @@ html{box-sizing:border-box;overflow-x:hidden}body{margin: 0} */
   max-width: 250px;
 }
 strong {
-  font-family: Monotype corsiva;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 12px;
   text-align: center;
   font-weight: bold;
@@ -96,36 +120,61 @@ strong {
   background-color: lightgray;
   border-radius: 8px;
 }
-.entrep.li:link {
+/* .entrep.li:link {
   text-decoration: none;
   color: red;
 }
 .entrep.li:visited {
   text-decoration: none;
   color: rgb(5, 5, 75);
-}
-.entrep li:hover {
+} */
+/* .entrep li:hover {
   color: white;
   background-color: grey;
-  font-size: 18px;
-  padding: 2px;
+  /* font-size: 18px; *
+  padding: 1px;
   border-radius: 0 5px 0 5px;
-}
-.entrep.li:active {
+} */
+/* .entrep.li:active {
   color: green;
 }
 .entrep li {
-  /* text-decoration: none; */
+  /* text-decoration: none; 
   color: white;
   font-family: coursive;
   font-weight: lighter;
   font-size: 18px;
   text-align: left;
   margin-left: -12px;
+} */
+
+ul.arrow-list {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+ul.arrow-list li {
+  position: relative;
+  padding-left: 20px; /* Add space for the arrow */
+  margin-bottom: 10px;
+}
+
+ul.arrow-list li::before {
+  content: "➤"; /* Unicode for the arrow */
+  position: absolute;
+  left: 0;
+  color:#000; /* Arrow color */
+  font-size: 16px; /* Adjust size */
+}
+
+.entrep li a{
+  text-decoration: none;
+  text-align: left;
 }
 .entrep1 i,.entrep11 i {
   background-color: rgba(0, 0, 0, 0.61);
-  font-family: Magneto;
+  font-family:'Times New Roman', Times, serif;
   border-radius: 4px;
   padding: 4px;
   text-align: center;
@@ -133,7 +182,7 @@ strong {
   font-weight: bold;
 }
 .entrep1 {
-  background: whitesmoke;
+  background: url(edukation/jaoyem33.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
@@ -164,20 +213,30 @@ strong {
 /* .entrep3.a{text-decoration: none;color: white} */
 .entrep2 i,
 .entrep3 i {
-  background-color: rgb(238, 235, 235);
+  /* background-color: rgb(238, 235, 235);
   color: red;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 20px; */
+  background-color: rgba(0, 0, 0, 0.61);
+  font-family:'Times New Roman', Times, serif;
+  border-radius: 4px;
+  padding: 4px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
 }
 .toobld {
-  font-family: Monotype Corsiva;
+  font-family:'Times New Roman', Times, serif;
   background-color: darkgray;
-  color: red;
-  font-weight: bold;
+  /* color: red; */
+  font-weight: 700px;
   border-radius: 5px;
   padding: 2px;
-  text-decoration: none;
   border-bottom: 4px solid brown;
+}
+.toobld a{
+  text-decoration: none;
+  color: white;
 }
 
 .h3-container:after,
@@ -666,7 +725,7 @@ p.h3-differ:nth-child(2) {
   display: block;
   border-radius: 5px;
   border: none;
-  border-bottom: 2px solid rgb(75, 75, 2);
+  border-bottom: 2px solid #960014;
   width: 100%;
 }
 .h3-myform {
@@ -714,7 +773,7 @@ p.h3-differ:nth-child(2) {
 }
 .h3-grey {
   color: #000;
-  background-color: #9e9e9e;
+  background-color: #dcdcdc;
 }
 .h3-dark-grey,
 .h3-hover-dark-grey:hover,
@@ -787,6 +846,7 @@ p.h3-differ:nth-child(2) {
   margin-bottom: 10px;
   width: 100%;
 }
+
 .container1 {
   /* background-color:grey; */
   border: 1px solid #96001494;
@@ -798,7 +858,7 @@ p.h3-differ:nth-child(2) {
   margin-top: 10px;
   width: 100%;
   float: none;
-  color: ghostwhite;
+  color: rgb(150, 0, 20);
 }
 .container11 {
   /* background-color:grey; */
@@ -823,7 +883,7 @@ p.h3-differ:nth-child(2) {
   width: 100%;
 }
 .container12-about {
-  border: 1px solid rgba(252, 32, 32, 0.877);
+  /* border: 1px solid rgba(252, 32, 32, 0.877); */
   border-radius:8px;
   padding: 0.01em 8px;
   margin-left: 90px;
@@ -831,23 +891,28 @@ p.h3-differ:nth-child(2) {
   width: 85%;
 }
 .testi1 {
-  background-color: #616161;
+  /* background-color: #969393; */
+  background-color: rgba(201, 206, 206, 0.589);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 8px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 17px;
+  margin-top: 20px;
 }
 .testi10 {
-  background-color: #616161;
+  background-color: #dcdcdc;
   display: inline-block;
   margin-bottom: 20px;
   margin-top: 30px;
   border-radius: 10px;
+  box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
 .testi1 img {
-  width: 120px;
+  width: 100px;
   border-radius: 100px;
 }
 .testi1 p {
@@ -858,7 +923,7 @@ p.h3-differ:nth-child(2) {
   color: #960014;
 }
 .testi10 p {
-  color: #fff;
+  color: #000;
   font-size: 18px;
 }
 .testi10 b {
@@ -881,13 +946,13 @@ p.h3-differ:nth-child(2) {
 .social-btn2 {
   width: 100%;
   display: block;
-  padding: 5px;
+  padding: 4px;
   border-radius: 5px;
   border-bottom: 2px solid #616161;
   float: right;
   /* background-color: #f4433675; */
   color: darkgreen;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 .s1,
@@ -897,7 +962,7 @@ p.h3-differ:nth-child(2) {
   cursor: pointer;
   margin: 4px;
   padding: 2px;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   border-radius: 3px;
 }
 .s1:hover,

@@ -7,28 +7,66 @@
     <title>Healthlogin page</title>
     <link rel="stylesheet" href="marque.css">
     <link rel="stylesheet" href="preserve.css">
+    <link rel="stylesheet" href="newcss.css">
+
     <style>
-        @media (max-width:600px){
-        .mainbox{
-            width:80%;
-        }
-        /*img{
-            width: 60%;
-        }*/
-        } 
-        /* table{
-            border-collapse: collapse;
-        }
-    td{
-        /* border: 1px solid green; 
-        /* border-collapse:collapse; 
-        width: 30px; 
-    }*/
-    .mainbox{
+        /* Base Styles */
+	body, html {
+		margin: 0;
+		padding: 0;
+		/* font-family: Arial, sans-serif; */
+		overflow-x: hidden;
+	}
+	img{
+	      width:100%;
+		  height: auto;
+		}
+		/* .menu{
+			display: none;
+		} */
+	body::after{
+        content: "";
+			background: url('reallogo.png') no-repeat center center fixed;
+			background-size: cover;
+			opacity: 0.05;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: -1;
+		}
+
+        /* Navbar Styles */
+		.dam-top ul {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			list-style: none;
+			padding: 10px 20px;
+			background-color: rgb(10, 10, 37);
+			margin: 0;
+			color: white;
+			flex-wrap: wrap;
+		}
+		.dam-top ul a {
+			color: white;
+			text-decoration: none;
+			padding: 20px;
+			font-size: 20px;
+            font-weight: bold;
+		}
+
+        /* main box */
+
+    .h3-mainbox{
+        transition: margin-left 0.4s;
         width: 40%;
         border: 2px solid rosybrown;
         border-radius: 6px;
         padding: 8px;
+        margin: auto;
+        margin-top: 40px;
         }
         img{
             width: 100%;
@@ -37,46 +75,84 @@
             background-color: beige;
             font-size: 20px;
             box-sizing: border-box;
+            text-align: center;
         }
+        input{
+            border: 1px solid green;
+            font-size: 15px;
+        }
+        /* Footer */
+		footer {
+			text-align: center;
+			padding: 15px;
+			background-color: rgba(0, 0, 0, 0.897);
+			color: white;
+		}
+		.footer-margin{
+			margin-top: 40px;
+		}
+
+        /* media queries */
+
+        @media (max-width: 768px) {
+			.dam-top ul {
+				flex-direction: column;
+			}
+			
+		}
+
+        @media (max-width:600px){
+        .h3-mainbox{
+            width:90%;
+            /* margin: 0; */
+            margin-top: 40px;
+        }
+        .dam-wide,.dam-top ul a{
+			font-weight:bold;
+			font-size: 16px;
+            gap: 10px;
+            padding: 5px;
+		}
+        } 
     </style>
 </head>
 <body>
-    <center>
-    <h1>This Page is called "Healthymetre"!</h1>
-    <div class="mainbox">
+
+    <div class="dam-top">
+		<ul class="dam-navbar dam-wide dam-padding-8 dam-card-2">
+			<li>
+				<a href="deexcellence.html" class="dam-margin-left"><b>De'Excellence</b> College</a>
+			</li>
+			<!-- Float links to the right. Hide them on small screens -->
+			<li dam-right >
+				<a href="schoolupdate.html" class="dam-left">Updates</a>
+				<a href="deexcellenceREGpage.html" class="dam-left">e-Library</a>
+				<a href="aboutUs.html" class="dam-left">About/Contacts</a>
+			</li>
+		</ul>
+	</div>
+
+    
+    <div class="h3-mainbox">
+        <h1 style="text-align: center;">This Page is called "Healthymetre"!</h1>
         <div>
             <img src="health/images/fruits.jpg" alt="healthymetre">
         </div>
-        <div class="2mainbox">
-            <form action="#healthymetre.php" method="POST">
+        <div class="mainbox">
+            <form action="checkupnew11.html" method="POST">
                 
                 <h3>please enter your login details correctly..</h3>
-                <!-- <table>
-                <tr> -->
                     <label>Username:</label>
-                    <!-- <td> -->
+                    
                         <input type="text" name="username" required>
                         <br>
                         <br>
-                    <!-- </td> -->
-                <!-- </tr>
-                <tr> -->
+                    
                     <label>Password:</label>
-                    <!-- <td> -->
+                    
                         <input type="password" name="password" id="pswd" required>
                         <br>
                         <br>
-                    <!-- </td>
-                </tr>
-                <tr> -->
-                    <!-- <td> -->
-                        <button onclick="reveals()">see_password</button>
-                    <!-- </td>
-                    <td> -->
-                        <input type="text" id="demo">
-                    <!-- </td>
-                </tr>
-            </table> -->
             <br>
             <br>
                 <input type="submit" name="submit" value="SUBMIT">
@@ -84,25 +160,13 @@
             </form>
         </div>
     </div>
-    <script>
-        function reveals(){
-            var x = document.grtElementById("pswd").value;
-            document.getElementById("demo").inneHTML = x;
-        }
-    </script>
-    </center>
     <br>
     <br>
-    <footer style="height:60px;background-color:rgba(100, 94, 94, 0.562);">
-        <strong class="fame">
-       Courtesy:<br>
-       Haweytech Unlimited<br>
-       Technologies for better World(Nigeria CHAPTER)
-</strong>
-   <b>Powered by 
-<a href="default.html" target="_blank" style="font-size:20px;
-color:ghostwhite;">Haweytech</a>
-</b>
-</footer>
+    <footer class="footer-margin">
+        <b><a href='help.html' style="color:white">Help</a> | <a href='contact.html' style="color:white">Contact</a> | <a href='login.html' style="color:white">Login</a></b>
+    </footer>
+    <footer>
+        <b>Powered by</b> <a href="default.html" target="_blank" style="font-size: 20px; color: ghostwhite;">Haweytech</a>
+    </footer>
 </body>
 </html>

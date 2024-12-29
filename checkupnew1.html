@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Check-Up</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js Library -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        p a{
+        text-decoration: none;
+        text-align: center;
+        color: green;
+        font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input, select {
+            width: 50%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .sympt{
+            width: 50%;
+            background-color:rgba(244, 247, 247, 0.589);
+            box-shadow:0 2px 4px 0 rgba(235, 232, 232, 0.747),0 2px 10px 0 rgba(199, 181, 181, 0.603);
+        }
+        button {
+            display: block;
+            width: 40%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+
+        .chart-container {
+            margin-top: 40px;
+        }
+
+        canvas {
+            max-width: 100%;
+        }
+
+        #bmiResult {
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            margin-top: 20px;
+        }
+        @media (max-width:600px) {
+            .sympt, input{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="form-head">
+        <h1>Health Check-Up</h1>
+        <p>Need a Guide on how to fill this form? 
+            <a href="pdfs/healthcheckup_detail.pdf" target="_blank">CLICK HERE!</a>
+        </p>
+        </div>
+
+        <hr style="color: darkred;margin-bottom: 20px;">
+        <div class="form-box">
+        <form id="healthCheckForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required min="50" max="250">
+
+            <label for="symptoms">Symptoms:</label>
+            <div class="sympt">
+                <input type="checkbox" name="symptoms[]" value="Cough"> Cough<br>
+                <input type="checkbox" name="symptoms[]" value="Fever"> Fever<br>
+                <input type="checkbox" name="symptoms[]" value="Fatigue"> Fatigue<br>
+                <input type="checkbox" name="symptoms[]" value="Headache"> Headache<br>
+                <input type="checkbox" name="symptoms[]" value="Shortness of Breath"> Shortness of Breath<br>
+                <input type="checkbox" name="symptoms[]" value="Nausea"> Nausea<br>
+                <input type="checkbox" name="symptoms[]" value="Dizziness"> Dizziness<br>
+            </div>
+
+            <label for="bloodPressure">Blood Pressure:</label>
+            <input type="text" id="bloodPressure" name="bloodPressure" placeholder="e.g., 120/80">
+
+            <label for="heartRate">Heart Rate (bpm):</label>
+            <input type="number" id="heartRate" name="heartRate" placeholder="e.g., 72">
+
+            <input type="hidden" id="bmi" name="bmi">
+            <input type="hidden" id="status" name="status">
+
+            <button type="submit">Save Health Check</button>
+        </form>
+        </div>
+
+        
+        <p id="bmiResult"></p> <!-- Display BMI result here -->
+
+        <div id="recommendations" style="margin-top: 20px; display: none;">
+            <h2>Health Recommendations</h2>
+            <p id="recommendationsText"></p>
+        </div>
+
+        <div class="chart-container">
+            <h2>BMI Trends</h2>
+            <canvas id="bmiChart"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Handle Form Submission
+        document.querySelector('#healthCheckForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const formData = {
+                name: document.getElementById('name').value,
+                age: parseInt(document.getElementById('age').value),
+                weight: parseFloat(document.getElementById('weight').value),
+                height: parseFloat(document.getElementById('height').value),
+                symptoms: Array.from(document.querySelectorAll('input[name="symptoms[]"]:checked')).map(input => input.value),
+                bloodPressure: document.getElementById('bloodPressure').value,
+                heartRate: parseInt(document.getElementById('heartRate').value),
+            };
+
+            // Validate height, blood pressure, and heart rate
+            if (formData.height < 50 || formData.height > 250) {
+                alert('Please enter a valid height between 50 cm and 250 cm.');
+                return;
+            }
+
+            const bpPattern = /^\d{2,3}\/\d{2,3}$/; // Matches "120/80" format
+            if (!bpPattern.test(formData.bloodPressure)) {
+                alert('Please enter a valid blood pressure in the format "120/80".');
+                return;
+            }
+
+            if (formData.heartRate < 40 || formData.heartRate > 200) {
+                alert('Please enter a valid heart rate between 40 and 200 bpm.');
+                return;
+            }
+
+            // Calculate BMI
+            const heightInMeters = formData.height / 100;
+            const bmi = (formData.weight / (heightInMeters * heightInMeters)).toFixed(2);
+            formData.bmi = bmi;
+
+            if (bmi < 18.5) {
+                formData.status = "Underweight";
+            } else if (bmi < 24.9) {
+                formData.status = "Normal weight";
+            } else if (bmi < 29.9) {
+                formData.status = "Overweight";
+            } else {
+                formData.status = "Obese";
+            }
+
+            // Display BMI Result
+            document.getElementById('bmiResult').innerText = `Your BMI is ${bmi}, which is considered ${formData.status}.`;
+
+            // Save Health Data via API
+            try {
+                const saveResponse = await fetch('save_health_check.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData),
+                });
+
+                const result = await saveResponse.json();
+
+                if (saveResponse.ok) {
+                    alert(result.message || 'Health data saved successfully!');
+                } else {
+                    alert(result.error || 'Error saving health data.');
+                }
+
+                // Fetch Recommendations
+                fetchRecommendations(formData.symptoms);
+            } catch (error) {
+                console.error('Error saving health data:', error);
+            }
+        });
+
+        async function fetchRecommendations(symptoms) {
+            console.log("Fetching recommendations for symptoms:", symptoms); // Debugging line
+
+            try {
+                const response = await fetch('mockData.json'); // Load mock data
+                const data = await response.json();
+
+                const recommendations = symptoms
+                    .map(symptom => data[symptom] || `No recommendation available for ${symptom}.`)
+                    .join(" ");
+
+                document.getElementById('recommendationsText').innerText = recommendations;
+                document.getElementById('recommendations').style.display = 'block';
+            } catch (error) {
+                console.error('Error loading mock data:', error);
+            }
+        }
+
+        // Render BMI Trends Chart
+        async function renderBMIChart() {
+            try {
+                const bmiResponse = await fetch('fetch_bmi.php');
+                const bmiData = await bmiResponse.json();
+
+                const labels = bmiData.map(item => item.name);
+                const bmiValues = bmiData.map(item => item.bmi);
+
+                const ctx = document.getElementById('bmiChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'BMI Trends',
+                            data: bmiValues,
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 2,
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                    }
+                });
+            } catch (error) {
+                console.error('Error rendering chart:', error);
+            }
+        }
+
+        renderBMIChart();
+    </script>
+</body>
+</html>

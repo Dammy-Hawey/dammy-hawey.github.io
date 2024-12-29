@@ -4,47 +4,56 @@
   box-sizing: border-box; /* Consistent box-sizing model across elements */
 }
 
-.dexlib1,.dexlib2,.dexlib3,.dexlib4,
-.dexlib5,.dexlib6,.dexlib7,.dexlib8,
-.dexlib9,.dexlib10,.dexlib11,.dexlib12 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: black;
-    font-weight: bold;
-  }
+.dexlib1,
+.dexlib2,
+.dexlib3,
+.dexlib4,
+.dexlib5,
+.dexlib6,
+.dexlib7,
+.dexlib8,
+.dexlib9,
+.dexlib10,
+.dexlib11,
+.dexlib12 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-weight: bold;
+}
 .dexlib1 {
-    background: url("technologies/tech.jpeg");
-    color: black;
-  }
-  .dexlib2 {
-    background: url("technologies/tech1.jpeg");
-    color: black; 
-  }
-  .dexlib3 {
-    background: url("technologies/tech10.webp");
-    color: black;
-  }
-  .dexlib4 {
-    background: url("technologies/tech2.jpeg");
-    color: black;
-  }
-  .dexlib5 {
-    background: url("technologies/tech3.jpeg");
-    color: black;
-  }
-  .dexlib6 {
-    background: url("technologies/tech4.jpeg");
-    color: black;
-  }
-  .dexlib7 {
-    background: url("technologies/tech5.jpeg");
-    color: black;
-  }
-  .dexlib8 {
-    background: url("technologies/tech6.webp");
-    color: black;
-  }
-  /* .dexlib9 {
+  background: url("technologies/tech.jpeg");
+  color: black;
+}
+.dexlib2 {
+  background: url("technologies/tech1.jpeg");
+  color: black;
+}
+.dexlib3 {
+  background: url("technologies/tech10.webp");
+  color: black;
+}
+.dexlib4 {
+  background: url("technologies/tech2.jpeg");
+  color: black;
+}
+.dexlib5 {
+  background: url("technologies/tech3.jpeg");
+  color: black;
+}
+.dexlib6 {
+  background: url("technologies/tech4.jpeg");
+  color: black;
+}
+.dexlib7 {
+  background: url("technologies/tech5.jpeg");
+  color: black;
+}
+.dexlib8 {
+  background: url("technologies/tech6.webp");
+  color: black;
+}
+/* .dexlib9 {
     background: url("technologies/tech11.webp");
     color: black;
   }
@@ -61,23 +70,22 @@
     color: black;
   } */
 
-  .h3-main,
+.h3-main,
 #main {
   transition: margin-left 0.4s;
 }
 @media (max-width: 600px) {
-    .h3-main1 {
-      width: 100%;
-      margin-top:200px !important;
-      margin-left: 0;
-      /* margin-left:400px; */
-    }
+  .h3-main1 {
+    width: 100%;
+    margin-top: 200px !important;
+    margin-left: 0;
+    /* margin-left:400px; */
   }
+}
 
-  @media screen and (max-width: 992px) {
-    
-    .h3-main1 {
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-    }
+@media screen and (max-width: 992px) {
+  .h3-main1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
+}

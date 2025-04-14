@@ -1,0 +1,210 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0a0f2c;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+    /* background-image: url(imagesi/trojanpic2.png); */
+    background-color: #c3c1c7;
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat; */
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 3px solid darkred;
+}
+
+.glitch {
+    font-size: 2.5rem;
+    color: red;
+    text-shadow: 1px 1px 0 #001f3f, 2px 2px 0 darkblue;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #f10b0b;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1a1f3c;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #ddd;
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff4d4d;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #1a1f3c;
+    border-radius: 10px;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+a {
+    color: #62b1ff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0a0f2c;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+/* Footer Start */
+.futer{
+    background-color: #3a3e64;
+    color: white;
+  }
+  .futer-text{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 70px 15% 90px 10%;
+    text-align: center;
+  }
+  .futer-text .futer-m-text h2{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .futer-text .futer-m-text p{
+    font-size: 14px;
+    color: lightgrey;
+  }
+  .futer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .futer-social a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    cursor: pointer;
+    margin: 0 3px;
+    transition: .5s;
+  }
+  .futer-social a:hover{
+    color: grey;
+    border-color: grey;
+  }
+  .futer-copyright{
+    background-color: #313454;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 13px;
+    color: grey;
+  }
+  .futer-copyright b{
+    color: white;
+  }
+
+  /* service start */
+.service{
+  width: 70%;
+  padding:100px 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* text-align: center; */
+  grid-gap: 8%;
+}
+.service h3{
+  margin: 18px 0;
+  font-size: 20px;
+}
+.service span{
+  font-size: 30px;
+  color: #eb0808;
+}
+.service p{
+  color: gray;
+  font-size: 13px;
+}
+.service1, .service2, .service3, .service4, .service5, .service6{
+  border-radius: 8px;
+  border-bottom: 2px solid #eb0808;
+}
+/* service  end*/
+  
+  /* Footer End */
+  
+
+@media (max-width: 768px) {
+    
+    .service{
+      grid-template-columns: 100%;
+  }
+    section {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    .futer-text{
+        grid-template-columns: 100%;
+        padding: 20px;
+    }
+    .futer-m-text{
+        margin: 50px 0;
+    }
+}
+
+@media screen  and (max-width:1025px){
+ 
+  .services{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery{
+      grid-template-columns: repeat(3, 1fr);
+  }
+  .team{
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media screen  and (max-width:600px){
+  .gallery{
+      grid-template-columns:100%;
+      padding: 0 10%;
+  }
+  .service{
+      grid-gap: 4%;
+      padding-bottom: 30%;
+  }
+}
+
+@media screen  and (max-width:400px){
+  .gallery{
+      grid-template-columns:100%;
+      padding: 0 10%;
+  }
+  .advert-text{
+      padding:20px 10%;
+  }
+}

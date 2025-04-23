@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cybersecurity eLibrary and awareness hub">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TroJan-eLib.com</title>
     <link rel="shortcut icon" type="image/png" href="mylogoicon.png">
@@ -12,8 +13,24 @@
     <link rel="shortcut icon" type="image/png" sizes="80x80" href="assets/images/Trojanlogo.png">
 
     <style>
+        #searchInput:focus {
+  outline: none;
+  border-color: #ff0044;
+  box-shadow: 0 0 8px #00f0ff;
+}
 
     </style>
+
+    <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '353041689');
+</script>
+
 
 </head>
 <body>
@@ -36,7 +53,18 @@
                 
 
         <!-- E-library section start -->
-
+        <div style="text-align: center; margin-bottom: 20px;margin-top: 20px;">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="tech">IT & Tech</button>
+            <button class="filter-btn" data-filter="christian">Christian</button>
+            <button class="filter-btn" data-filter="personal">Personal Dev</button>
+            <button class="filter-btn" data-filter="motivation">Motivation</button>
+          </div>
+          
+        <div style="text-align: center; margin-top: 20px;">
+            <input type="text" id="searchInput" placeholder="Search for books..." style="padding: 10px; width: 60%; border: 2px solid #00f0ff; border-radius: 6px; font-size: 16px;">
+          </div>
+          
         <section class="elibrary">
             <!-- <h2>Committ Yourself to STUDIES!</h2> -->
 
@@ -45,7 +73,7 @@
             <!-- First Photo Grid-->
             <div class="bottom-gap h3-row-padding h3-padding-16 h3-center" id="food">
         
-              <div class="h3-quarter">
+              <div class="h3-quarter" data-category = "christian">
                 <div class="dexlib1" style="text-align: center;">
                     <i>Available</i>
                     <br><br><br><br><br><br><br>
@@ -60,7 +88,7 @@
                 <p>We provide Technology-base environment for your ward(s).</p>
               </div>
         
-              <div class="h3-quarter">
+              <div class="h3-quarter" data-category="tech">
                 <div class="dexlib2" style="text-align: center;">
                     <i>Available</i>
                     <br><br><br><br><br><br><br>
@@ -76,7 +104,7 @@
                 <p>We provide Technology-base Materials for IT Studies</p>
               </div>
         
-              <div class="h3-quarter">
+              <div class="h3-quarter" data-category="motivation">
                 <div class="dexlib3" style="text-align: center;">
                     <i>Available</i>
                     <br><br><br><br><br><br><br>
@@ -291,6 +319,14 @@
             <h2>Contact</h2>
             <p>Have suggestions or questions? Reach out via social media or email us at </p>
 
+            <form action="https://formsubmit.co/iamtrojan.com@gmail.com" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+              </form>
+              
+
             <!--Footer Start-->
         <div class="futer">
             <div class="futer-text">
@@ -332,6 +368,43 @@
             <p>&copy; 2025 iam÷TroJan. All rights reserved.</p>
         </footer>
     </div>
+
+    <!-- JS script for book searching -->
+    <script>
+        const searchInput = document.getElementById('searchInput');
+      
+        searchInput.addEventListener('keyup', function () {
+          const filter = searchInput.value.toLowerCase();
+          const bookCards = document.querySelectorAll('.h3-quarter');
+      
+          bookCards.forEach(card => {
+            const text = card.innerText.toLowerCase();
+            card.style.display = text.includes(filter) ? 'block' : 'none';
+          });
+        });
+      </script>
+      
+      <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+      
+        filterButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter');
+            const bookCards = document.querySelectorAll('.h3-quarter');
+      
+            bookCards.forEach(card => {
+              const category = card.getAttribute('data-category');
+              if (filter === 'all' || category === filter) {
+                card.style.display = 'block';
+              } else {
+                card.style.display = 'none';
+              }
+            });
+          });
+        });
+      </script>
+      
+     <!-- js ends -->
 
     <script src="assets/js/script.js"></script>
     <!-- Fontawesome JS file Include -->

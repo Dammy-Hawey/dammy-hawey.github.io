@@ -58,6 +58,60 @@ nav a {
     padding:3px; */
 }
 
+.filter-btn {
+  background: #00f0ff;
+  border: none;
+  padding: 8px 14px;
+  margin: 5px;
+  font-size: 14px;
+  color: #111;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.filter-btn:hover {
+  background: #ff0044;
+  color: white;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #00f0ff;
+  background: #1a1f3c;
+  color: #fff;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 10px;
+  background: #00f0ff;
+  color: #111;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #ff0044;
+  color: white;
+}
+
+
 /* glowing-button start*/
 
 /* .glow-button {

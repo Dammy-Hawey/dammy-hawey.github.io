@@ -154,12 +154,30 @@ a {
     color: #62b1ff;
 }
 
+/* library start */
+
+.formore{
+  margin-left:10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.formore a {
+  text-decoration: none;
+}
+
+/* library end */
 /* carousel-slide start */
 
 .slider-section {
   padding: 40px 20px;
   background: #111;
   color: #fff;
+}
+.slider-section-1{
+    padding: 40px 20px;
+    background: #00081f83;
+    color: #fff;
 }
 
 .slider {
@@ -371,6 +389,7 @@ footer {
   .team{
       grid-template-columns: repeat(2, 1fr);
   }
+  
 
 }
 
@@ -390,7 +409,16 @@ footer {
   font-size: 12px;
   margin: 0.3rem 0.5rem;
   
-}
+  }
+  .formore{
+    margin-left:10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .line1{width: 100%}
+  .line2{width: 90%}
+  
 
 }
 

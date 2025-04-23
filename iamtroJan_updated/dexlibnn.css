@@ -136,7 +136,9 @@
 }
 .h3-pagination li a {
   text-decoration: none;
+  font-weight: 500;
   color: #000;
+  background-color: #ccc;
   float: left;
   padding: 8px 16px;
 }
